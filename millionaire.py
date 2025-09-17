@@ -414,6 +414,162 @@ SAMPLE_QUESTIONS: List[Question] = [
              "A": "Tempering", "B": "Annealing", "C": "Quenching", "D": "Forging"}, correct="C"),
     Question(prompt="Which manufacturing philosophy focuses on eliminating defects?", choices={
              "A": "Lean", "B": "Six Sigma", "C": "Kaizen", "D": "Scrum"}, correct="B"),
+
+    # WATER
+    Question(prompt="Which process in the water cycle returns water vapor to liquid?", choices={
+             "A": "Condensation", "B": "Evaporation", "C": "Infiltration", "D": "Precipitation"}, correct="A"),
+    Question(prompt="What is the largest use of freshwater worldwide?", choices={
+             "A": "Agriculture", "B": "Industry", "C": "Domestic use", "D": "Hydropower"}, correct="A"),
+    Question(prompt="Which sea has the highest salinity?", choices={
+             "A": "Red Sea", "B": "Dead Sea", "C": "Caspian Sea", "D": "Baltic Sea"}, correct="B"),
+    Question(prompt="Which gas is most responsible for ocean acidification?", choices={
+             "A": "Oxygen", "B": "Carbon dioxide", "C": "Methane", "D": "Nitrogen"}, correct="B"),
+    Question(prompt="Which property of water stabilizes Earth's climate?", choices={
+             "A": "High specific heat capacity", "B": "Low density", "C": "Viscosity", "D": "Surface tension"}, correct="A"),
+    Question(prompt="Which river carries the most water volume?", choices={
+             "A": "Nile", "B": "Amazon", "C": "Yangtze", "D": "Mississippi"}, correct="B"),
+    Question(prompt="Which term describes water beneath Earth's surface?", choices={
+             "A": "Groundwater", "B": "Surface water", "C": "Rainwater", "D": "Runoff"}, correct="A"),
+    Question(prompt="Which lake is the largest by surface area?", choices={
+             "A": "Lake Baikal", "B": "Lake Victoria", "C": "Lake Superior", "D": "Lake Tanganyika"}, correct="C"),
+    Question(prompt="What is the main cause of ocean tides?", choices={
+             "A": "Wind", "B": "Earth's rotation", "C": "Moon's gravity", "D": "Sun's heat"}, correct="C"),
+    Question(prompt="What is the main goal of wastewater treatment?", choices={
+             "A": "Increase salinity", "B": "Remove contaminants", "C": "Generate energy", "D": "Filter minerals"}, correct="B"),
+
+    # MARKETING
+    Question(prompt="Which strategy uses influencers to promote products?", choices={
+             "A": "Guerrilla marketing", "B": "Influencer marketing", "C": "Content marketing", "D": "Event marketing"}, correct="B"),
+    Question(prompt="Which marketing concept emphasizes product quality over advertising?", choices={
+             "A": "Production concept", "B": "Selling concept", "C": "Marketing concept", "D": "Societal concept"}, correct="A"),
+    Question(prompt="What does PPC stand for in online marketing?", choices={
+             "A": "Pay Per Click", "B": "Price Promotion Campaign", "C": "Personalized Product Content", "D": "Performance Per Conversion"}, correct="A"),
+    Question(prompt="Which method involves small, unconventional marketing tactics?", choices={
+             "A": "Guerrilla marketing", "B": "Mass marketing", "C": "Direct mail", "D": "TV ads"}, correct="A"),
+    Question(prompt="What is 'brand equity'?", choices={
+             "A": "Company assets", "B": "Value of brand recognition", "C": "Stock value of company", "D": "Profit from one product line"}, correct="B"),
+    Question(prompt="Which pricing strategy adjusts based on demand in real time?", choices={
+             "A": "Skimming", "B": "Penetration", "C": "Dynamic pricing", "D": "Cost-plus pricing"}, correct="C"),
+    Question(prompt="Which marketing channel is best for real-time engagement?",
+             choices={"A": "TV ads", "B": "Email", "C": "Social media", "D": "Billboards"}, correct="C"),
+    Question(prompt="What is 'remarketing'?", choices={
+             "A": "Selling new products", "B": "Targeting previous visitors with ads", "C": "Changing brand name", "D": "Launching in new countries"}, correct="B"),
+    Question(prompt="Which factor is central to Maslow’s hierarchy in marketing?", choices={
+             "A": "Basic human needs", "B": "Government policy", "C": "Competitor analysis", "D": "Distribution channels"}, correct="A"),
+    Question(prompt="Which color is commonly used in marketing for eco-friendly brands?",
+             choices={"A": "Blue", "B": "Green", "C": "Red", "D": "Black"}, correct="B"),
+
+    # SALES
+    Question(prompt="What does 'cold calling' mean?", choices={
+             "A": "Calling existing customers", "B": "Calling new leads without prior contact", "C": "Calling after an email introduction", "D": "Calling during winter season"}, correct="B"),
+    Question(prompt="What is a 'sales quota'?", choices={
+             "A": "Maximum discount allowed", "B": "Target sales goal", "C": "Customer database", "D": "Sales meeting agenda"}, correct="B"),
+    Question(prompt="Which method focuses on building long-term customer trust?", choices={
+             "A": "Transactional selling", "B": "Relationship selling", "C": "Cold calling", "D": "Price dumping"}, correct="B"),
+    Question(prompt="Which tool automates lead tracking?", choices={
+             "A": "CRM software", "B": "Email client", "C": "Spreadsheet", "D": "Chat app"}, correct="A"),
+    Question(prompt="What is the main purpose of a sales pitch?", choices={
+             "A": "Collect payments", "B": "Introduce and persuade customers", "C": "Deliver products", "D": "Resolve complaints"}, correct="B"),
+    Question(prompt="Which objection is most common in sales?", choices={
+             "A": "No time", "B": "Price is too high", "C": "Already satisfied with current provider", "D": "All of the above"}, correct="D"),
+    Question(prompt="What does 'CLV' stand for?", choices={
+             "A": "Customer Loyalty Value", "B": "Client Lifetime Value", "C": "Conversion Lead Volume", "D": "Customer Leverage Variable"}, correct="B"),
+    Question(prompt="What is a 'sales funnel' used to track?", choices={
+             "A": "Team productivity", "B": "Customer journey from awareness to purchase", "C": "Product delivery times", "D": "Lead database"}, correct="B"),
+    Question(prompt="What is 'value selling'?", choices={
+             "A": "Discount-focused sales", "B": "Emphasizing product benefits over price", "C": "Selling at cost price", "D": "Focusing only on features"}, correct="B"),
+    Question(prompt="Which approach emphasizes listening to the customer first?", choices={
+             "A": "Consultative selling", "B": "Hard closing", "C": "Cold pitching", "D": "Passive selling"}, correct="A"),
+
+    # ENTREPRENEURSHIP
+    Question(prompt="Which entrepreneur founded Alibaba?", choices={
+             "A": "Elon Musk", "B": "Jack Ma", "C": "Jeff Bezos", "D": "Warren Buffett"}, correct="B"),
+    Question(prompt="Which document do investors receive outlining startup terms?", choices={
+             "A": "Balance sheet", "B": "Term sheet", "C": "Invoice", "D": "Audit report"}, correct="B"),
+    Question(prompt="Which entrepreneur coined the phrase 'Stay hungry, stay foolish'?", choices={
+             "A": "Steve Jobs", "B": "Larry Page", "C": "Elon Musk", "D": "Mark Cuban"}, correct="A"),
+    Question(prompt="What is the 'burn rate' of a startup?", choices={
+             "A": "Monthly expenses", "B": "Annual revenue", "C": "Employee turnover", "D": "Customer growth"}, correct="A"),
+    Question(prompt="Which startup funding method uses small investments from many people?", choices={
+             "A": "Venture capital", "B": "Crowdfunding", "C": "Private equity", "D": "Angel investing"}, correct="B"),
+    Question(prompt="Which entrepreneur started Tesla Motors?", choices={
+             "A": "Jeff Bezos", "B": "Bill Gates", "C": "Elon Musk", "D": "Larry Page"}, correct="C"),
+    Question(prompt="Which entrepreneur is associated with Virgin Group?", choices={
+             "A": "Elon Musk", "B": "Richard Branson", "C": "Mark Cuban", "D": "Peter Thiel"}, correct="B"),
+    Question(prompt="Which term describes selling a startup to another company?", choices={
+             "A": "Acquisition", "B": "Merger", "C": "IPO", "D": "Spin-off"}, correct="A"),
+    Question(prompt="Which entrepreneur is famous for investing on 'Shark Tank'?", choices={
+             "A": "Mark Cuban", "B": "Elon Musk", "C": "Jack Ma", "D": "Bill Gates"}, correct="A"),
+    Question(prompt="Which entrepreneur co-founded Google?", choices={"A": "Larry Page and Sergey Brin",
+             "B": "Jeff Bezos and Andy Jassy", "C": "Bill Gates and Paul Allen", "D": "Steve Jobs and Steve Wozniak"}, correct="A"),
+
+    # ELECTRONICS
+    Question(prompt="What does CPU stand for?", choices={
+             "A": "Central Processing Unit", "B": "Computer Power Unit", "C": "Central Peripheral Unit", "D": "Circuit Processing Unit"}, correct="A"),
+    Question(prompt="Which unit is used to measure electrical current?", choices={
+             "A": "Volt", "B": "Ohm", "C": "Ampere", "D": "Watt"}, correct="C"),
+    Question(prompt="Which device controls current flow in one direction only?", choices={
+             "A": "Diode", "B": "Capacitor", "C": "Inductor", "D": "Resistor"}, correct="A"),
+    Question(prompt="What is the binary system base?", choices={
+             "A": "Base 2", "B": "Base 8", "C": "Base 10", "D": "Base 16"}, correct="A"),
+    Question(prompt="Which device amplifies weak signals?", choices={
+             "A": "Resistor", "B": "Transistor", "C": "Capacitor", "D": "Transformer"}, correct="B"),
+    Question(prompt="What does AC stand for in electricity?", choices={
+             "A": "Active Current", "B": "Alternate Current", "C": "Alternating Current", "D": "Absolute Current"}, correct="C"),
+    Question(prompt="Which frequency band does Wi-Fi commonly use?", choices={
+             "A": "900 MHz", "B": "2.4 GHz and 5 GHz", "C": "50 Hz", "D": "100 MHz"}, correct="B"),
+    Question(prompt="Which electronic component resists current flow?", choices={
+             "A": "Resistor", "B": "Capacitor", "C": "Transistor", "D": "Diode"}, correct="A"),
+    Question(prompt="What is the SI unit of capacitance?", choices={
+             "A": "Farad", "B": "Ohm", "C": "Tesla", "D": "Watt"}, correct="A"),
+    Question(prompt="Which device converts digital signals into analog?", choices={
+             "A": "ADC", "B": "DAC", "C": "CPU", "D": "ROM"}, correct="B"),
+
+    # PROGRAMMING
+    Question(prompt="Which language is known as the 'mother of all languages'?", choices={
+             "A": "C", "B": "Python", "C": "Java", "D": "Assembly"}, correct="A"),
+    Question(prompt="What does SQL stand for?", choices={
+             "A": "Structured Query Language", "B": "Simple Question Logic", "C": "System Query Loop", "D": "Sequential Queue Logic"}, correct="A"),
+    Question(prompt="Which data structure uses LIFO order?", choices={
+             "A": "Stack", "B": "Queue", "C": "Tree", "D": "Array"}, correct="A"),
+    Question(prompt="Which keyword is used for inheritance in Python?", choices={
+             "A": "extends", "B": "inherits", "C": "class", "D": "(class Sub(Base))"}, correct="D"),
+    Question(prompt="Which language is mainly used for Android app development?", choices={
+             "A": "Swift", "B": "Kotlin", "C": "C#", "D": "Ruby"}, correct="B"),
+    Question(prompt="Which programming concept is based on 'functions as first-class citizens'?", choices={
+             "A": "Object-Oriented", "B": "Functional programming", "C": "Imperative programming", "D": "Procedural programming"}, correct="B"),
+    Question(prompt="What is the default data type for numbers with decimals in Python?", choices={
+             "A": "int", "B": "float", "C": "double", "D": "decimal"}, correct="B"),
+    Question(prompt="Which Python library is used for data analysis?", choices={
+             "A": "Flask", "B": "NumPy", "C": "Pandas", "D": "Requests"}, correct="C"),
+    Question(prompt="What symbol is used for exponentiation in Python?", choices={
+             "A": "^", "B": "**", "C": "exp()", "D": "^^"}, correct="B"),
+    Question(prompt="Which sorting algorithm is stable?", choices={
+             "A": "Merge Sort", "B": "Quick Sort", "C": "Heap Sort", "D": "Selection Sort"}, correct="A"),
+
+    # MANUFACTURING
+    Question(prompt="Which process improves surface finish by abrasion?", choices={
+             "A": "Milling", "B": "Grinding", "C": "Casting", "D": "Forging"}, correct="B"),
+    Question(prompt="Which material is commonly used in injection molding?", choices={
+             "A": "Wood", "B": "Steel", "C": "Plastic", "D": "Glass"}, correct="C"),
+    Question(prompt="Which process uses compressed air to cut materials?", choices={
+             "A": "Water jet cutting", "B": "Laser cutting", "C": "Plasma cutting", "D": "CNC milling"}, correct="C"),
+    Question(prompt="Which method shapes metal by hammering?", choices={
+             "A": "Casting", "B": "Forging", "C": "Extrusion", "D": "Machining"}, correct="B"),
+    Question(prompt="Which chart is used for process flow visualization?", choices={
+             "A": "Pareto chart", "B": "Flowchart", "C": "Scatter plot", "D": "Control chart"}, correct="B"),
+    Question(prompt="Which material property resists scratching?", choices={
+             "A": "Hardness", "B": "Elasticity", "C": "Ductility", "D": "Toughness"}, correct="A"),
+    Question(prompt="Which process produces sheets by forcing metal through rollers?", choices={
+             "A": "Rolling", "B": "Casting", "C": "Extrusion", "D": "Machining"}, correct="A"),
+    Question(prompt="Which concept in Lean manufacturing refers to continuous flow?", choices={
+             "A": "Kanban", "B": "JIT", "C": "Kaizen", "D": "Poka-yoke"}, correct="B"),
+    Question(prompt="Which manufacturing defect involves cavities in castings?", choices={
+             "A": "Porosity", "B": "Warping", "C": "Cracking", "D": "Cold shut"}, correct="A"),
+    Question(prompt="Which Japanese term means 'continuous improvement'?", choices={
+             "A": "Kaizen", "B": "Kanban", "C": "Seiketsu", "D": "Muda"}, correct="A"),
+
+
 ]
 
 
