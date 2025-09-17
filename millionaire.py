@@ -5,7 +5,8 @@ Terminal "Millionaire"-style quiz game
 Updates:
 - Replaced **50:50** with **Take a Shot**: removes **one** wrong answer per use.
 - You can use **Take a Shot** up to **7 times per game**.
-- Keys: [T] Take a Shot, [U] Audience, [P] Phone a Friend, [W] Walk away, A/B/C/D to answer.
+- Replaced **Phone a Friend** with **Swap the Question**: once per game, swap the current question for another random one.
+- Keys: [T] Take a Shot, [U] Audience, [S] Swap the Question, [W] Walk away, A/B/C/D to answer.
 - Robust input handling: gracefully exits on non-interactive stdin (EOFError/OSError).
 - Removed choices now disappear completely from the screen instead of just being dimmed.
 """
@@ -73,10 +74,10 @@ CHECKPOINTS = {4, 9}
 class Lifelines:
     take_shot_uses: int = 7
     audience: bool = True
-    phone: bool = True
+    swap: bool = True
 
     def any_left(self) -> bool:
-        return self.take_shot_uses > 0 or self.audience or self.phone
+        return self.take_shot_uses > 0 or self.audience or self.swap
 
 
 # ---------------------- Game Engine ----------------------
@@ -147,23 +148,19 @@ class Game:
                 print(f"  {k}: {percentages[k]}%")
         self.lifelines.audience = False
 
-    def phone_friend(self) -> None:
-        if not self.lifelines.phone:
-            print(c("You already phoned a friend.", Style.DIM))
+    def swap_question(self) -> None:
+        if not self.lifelines.swap:
+            print(c("You already used Swap the Question.", Style.DIM))
             return
-        correct = self.questions[self.current_index].correct
-        options = [k for k in "ABCD" if k not in self.eliminated]
-        if self.rng.random() < 0.75:
-            guess = correct
-        else:
-            wrong = [k for k in options if k != correct]
-            guess = self.rng.choice(wrong) if wrong else correct
-        print(c("Your friend thinks the answer is:",
-              Style.CYAN), c(guess, Style.BOLD))
-        if self.questions[self.current_index].hint:
-            print(c("Friend adds:", Style.CYAN),
-                  self.questions[self.current_index].hint)
-        self.lifelines.phone = False
+        remaining = list(range(self.current_index + 1, len(self.questions)))
+        if not remaining:
+            print(c("No remaining questions to swap with.", Style.DIM))
+            return
+        j = self.rng.choice(remaining)
+        self.questions[self.current_index], self.questions[j] = self.questions[j], self.questions[self.current_index]
+        self.eliminated.clear()
+        self.lifelines.swap = False
+        print(c("Swapped! You've got a new question.", Style.CYAN))
 
     # ---------- I/O ----------
     def clear_screen(self) -> None:
@@ -187,8 +184,8 @@ class Game:
                     f"[T] Take a Shot (x{self.lifelines.take_shot_uses})")
             if self.lifelines.audience:
                 ll.append("[U] Audience")
-            if self.lifelines.phone:
-                ll.append("[P] Phone a Friend")
+            if self.lifelines.swap:
+                ll.append("[S] Swap the Question")
             print(c("Lifelines:", Style.DIM), ", ".join(ll))
         print(c("Type A/B/C/D to answer, W to walk away, or lifeline keys.", Style.DIM))
         print()
@@ -198,7 +195,7 @@ class Game:
         print(c(q.prompt, Style.BOLD))
         for k in "ABCD":
             if k in self.eliminated:
-                continue  # don't show eliminated options
+                continue
             print(f"  {k}. {q.choices[k]}")
         print()
 
@@ -209,7 +206,7 @@ class Game:
             except (EOFError, OSError):
                 print(c("Input error or stream closed. Exiting game.", Style.RED))
                 raise SystemExit(1)
-            valid = set(["A", "B", "C", "D", "W", "T", "U", "P"]
+            valid = set(["A", "B", "C", "D", "W", "T", "U", "S"]
                         ) - self.eliminated
             if ans in valid:
                 return ans
@@ -233,8 +230,8 @@ class Game:
             if choice == "U":
                 self.ask_audience()
                 continue
-            if choice == "P":
-                self.phone_friend()
+            if choice == "S":
+                self.swap_question()
                 continue
 
             correct = self.questions[self.current_index].correct
