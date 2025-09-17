@@ -2,35 +2,21 @@
 """
 Terminal "Millionaire"-style quiz game
 
-Features
-- Money ladder (15 questions by default)
-- Lifelines: 50:50, Ask the Audience, Phone a Friend
-- Walk away option
-- Simple JSON question bank support (or play with built‑in sample)
-
-Usage
-  python millionaire.py                 # play with built‑in sample questions
-  python millionaire.py questions.json  # play with your own questions
-
-JSON format example
-[
-  {
-    "question": "What does CPU stand for?",
-    "choices": {"A": "Central Processing Unit", "B": "Computer Personal Unit", "C": "Central Performance Utility", "D": "Compute/Process Unit"},
-    "answer": "A",
-    "hint": "It's the brain of the computer."
-  }
-]
+Updates:
+- Replaced **50:50** with **Take a Shot**: removes **one** wrong answer per use.
+- You can use **Take a Shot** up to **7 times per game**.
+- Keys: [T] Take a Shot, [U] Audience, [P] Phone a Friend, [W] Walk away, A/B/C/D to answer.
+- Robust input handling: gracefully exits on non-interactive stdin (EOFError/OSError).
+- Removed choices now disappear completely from the screen instead of just being dimmed.
 """
 from __future__ import annotations
 
 import json
-import math
 import os
 import random
 import sys
 from dataclasses import dataclass, field
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Optional
 
 # ---------------------- Styling ----------------------
 
@@ -60,10 +46,8 @@ class Question:
 
     @staticmethod
     def from_dict(d: dict) -> "Question":
-        # Normalize keys to A-D, keep order A-D if possible
         choices = d.get("choices") or {}
         normalized = {k.upper(): v for k, v in choices.items()}
-        # Some writers might give a list; accept that too
         if not normalized and isinstance(d.get("choices"), list):
             letters = list("ABCD")
             normalized = {letters[i]: v for i,
@@ -77,22 +61,22 @@ class Question:
 
 
 DEFAULT_LADDER = [
-    100, 200, 300, 500, 1000,  # 5 (checkpoint)
-    2000, 4000, 8000, 16000, 32000,  # 10 (checkpoint)
+    100, 200, 300, 500, 1000,
+    2000, 4000, 8000, 16000, 32000,
     64000, 125000, 250000, 500000, 1000000,
 ]
 
-CHECKPOINTS = {4, 9}  # zero-indexed positions (after Q5 and Q10)
+CHECKPOINTS = {4, 9}
 
 
 @dataclass
 class Lifelines:
-    fifty: bool = True
+    take_shot_uses: int = 7
     audience: bool = True
     phone: bool = True
 
     def any_left(self) -> bool:
-        return self.fifty or self.audience or self.phone
+        return self.take_shot_uses > 0 or self.audience or self.phone
 
 
 # ---------------------- Game Engine ----------------------
@@ -110,7 +94,6 @@ class Game:
         return self.ladder[self.current_index - 1] if self.current_index > 0 else 0
 
     def checkpoint_money(self) -> int:
-        # return guaranteed money at last checkpoint reached
         last = 0
         for i in CHECKPOINTS:
             if self.current_index - 1 >= i:
@@ -121,27 +104,30 @@ class Game:
         return self.ladder[self.current_index]
 
     # ---------- Lifelines ----------
-    def apply_fifty_fifty(self) -> None:
-        if not self.lifelines.fifty:
-            print(c("You already used 50:50.", Style.DIM))
+    def take_a_shot(self) -> None:
+        if self.lifelines.take_shot_uses <= 0:
+            print(c("No Take a Shot uses left.", Style.DIM))
             return
-        wrong = [k for k in "ABCD" if k !=
-                 self.questions[self.current_index].correct and k not in self.eliminated]
-        to_remove = self.rng.sample(wrong, k=min(2, len(wrong)))
-        self.eliminated.update(to_remove)
-        self.lifelines.fifty = False
-        print(c("50:50 removes:", Style.CYAN), ", ".join(to_remove))
+        correct = self.questions[self.current_index].correct
+        candidates = [k for k in "ABCD" if k !=
+                      correct and k not in self.eliminated]
+        if not candidates:
+            print(c("No wrong answers left to remove.", Style.DIM))
+            return
+        to_remove = self.rng.choice(candidates)
+        self.eliminated.add(to_remove)
+        self.lifelines.take_shot_uses -= 1
+        print(c("Take a Shot removes:", Style.CYAN), to_remove, c(
+            f"(remaining {self.lifelines.take_shot_uses})", Style.DIM))
 
     def ask_audience(self) -> None:
         if not self.lifelines.audience:
             print(c("You already asked the audience.", Style.DIM))
             return
         correct = self.questions[self.current_index].correct
-        # Build a probability distribution skewed to the correct answer
         base = {k: 1.0 for k in "ABCD" if k not in self.eliminated}
-        base[correct] = 3.0  # bias
+        base[correct] = 3.0
         total = sum(base.values())
-        # generate percentages that sum to 100
         weights = {k: v / total for k, v in base.items()}
         percentages = {}
         remaining = 100
@@ -150,7 +136,6 @@ class Game:
             if i == len(keys) - 1:
                 percentages[k] = remaining
             else:
-                # draw around expected value with small noise
                 expected = weights[k] * 100
                 val = int(max(0, round(self.rng.gauss(expected, 6))))
                 val = min(val, remaining)
@@ -168,7 +153,6 @@ class Game:
             return
         correct = self.questions[self.current_index].correct
         options = [k for k in "ABCD" if k not in self.eliminated]
-        # Friend is helpful ~75% of the time
         if self.rng.random() < 0.75:
             guess = correct
         else:
@@ -183,10 +167,13 @@ class Game:
 
     # ---------- I/O ----------
     def clear_screen(self) -> None:
-        if os.name == "nt":
-            os.system("cls")
-        else:
-            os.system("clear")
+        try:
+            if os.name == "nt":
+                os.system("cls")
+            else:
+                os.system("clear")
+        except Exception:
+            pass
 
     def render_header(self) -> None:
         print(c("\nWho Wants To Be A (Terminal) Millionaire",
@@ -195,8 +182,9 @@ class Game:
         print("Prize:", c(f"${self.current_prize():,}", Style.YELLOW))
         if self.lifelines.any_left():
             ll = []
-            if self.lifelines.fifty:
-                ll.append("[F] 50:50")
+            if self.lifelines.take_shot_uses > 0:
+                ll.append(
+                    f"[T] Take a Shot (x{self.lifelines.take_shot_uses})")
             if self.lifelines.audience:
                 ll.append("[U] Audience")
             if self.lifelines.phone:
@@ -210,15 +198,18 @@ class Game:
         print(c(q.prompt, Style.BOLD))
         for k in "ABCD":
             if k in self.eliminated:
-                print(c(f"  {k}. {q.choices[k]}", Style.DIM))
-            else:
-                print(f"  {k}. {q.choices[k]}")
+                continue  # don't show eliminated options
+            print(f"  {k}. {q.choices[k]}")
         print()
 
     def get_input(self) -> str:
         while True:
-            ans = input(c("Your choice: ", Style.BOLD)).strip().upper()
-            valid = set(["A", "B", "C", "D", "W", "F", "U", "P"]
+            try:
+                ans = input(c("Your choice: ", Style.BOLD)).strip().upper()
+            except (EOFError, OSError):
+                print(c("Input error or stream closed. Exiting game.", Style.RED))
+                raise SystemExit(1)
+            valid = set(["A", "B", "C", "D", "W", "T", "U", "P"]
                         ) - self.eliminated
             if ans in valid:
                 return ans
@@ -227,7 +218,6 @@ class Game:
     # ---------- Flow ----------
     def play(self) -> None:
         while self.current_index < len(self.ladder):
-            self.eliminated.clear()
             self.clear_screen()
             self.render_header()
             self.render_question()
@@ -237,8 +227,8 @@ class Game:
                 print(c("You chose to walk away with:", Style.CYAN),
                       c(f"${self.money():,}", Style.YELLOW))
                 return
-            if choice == "F":
-                self.apply_fifty_fifty()
+            if choice == "T":
+                self.take_a_shot()
                 continue
             if choice == "U":
                 self.ask_audience()
@@ -247,7 +237,6 @@ class Game:
                 self.phone_friend()
                 continue
 
-            # Answer given
             correct = self.questions[self.current_index].correct
             if choice == correct:
                 print(c("Correct!", Style.GREEN), c(
@@ -257,7 +246,10 @@ class Game:
                     print(
                         c("Congratulations! You are a (terminal) millionaire!", Style.MAGENTA, Style.BOLD))
                     return
-                input(c("Press Enter for the next question...", Style.DIM))
+                try:
+                    input(c("Press Enter for the next question...", Style.DIM))
+                except (EOFError, OSError):
+                    print()
             else:
                 print(c("Sorry, that's incorrect.", Style.RED))
                 guaranteed = self.checkpoint_money()
@@ -270,100 +262,42 @@ class Game:
                 return
 
 
-# ---------------------- Questions ----------------------
+# ---------------------- Sample Questions ----------------------
 SAMPLE_QUESTIONS: List[Question] = [
-    Question(
-        prompt="Which of these animals is known for building dams?",
-        choices={"A": "Beaver", "B": "Otter", "C": "Seal", "D": "Walrus"},
-        correct="A",
-        hint="Flat tail, big teeth."
-    ),
-    Question(
-        prompt="In Python, what does the 'len' function return?",
-        choices={"A": "The last element", "B": "The length/size",
-                 "C": "The first index", "D": "The memory address"},
-        correct="B",
-        hint="Think: how many?"
-    ),
-    Question(
-        prompt="Which planet is known as the Red Planet?",
-        choices={"A": "Venus", "B": "Jupiter", "C": "Mars", "D": "Saturn"},
-        correct="C",
-    ),
-    Question(
-        prompt="What does 'HTTP' stand for?",
-        choices={"A": "HyperText Transfer Protocol", "B": "High Transfer Text Protocol",
-                 "C": "Hyperlink Transmission Process", "D": "Host Transfer Type Protocol"},
-        correct="A",
-    ),
-    Question(
-        prompt="Which language is primarily used for styling web pages?",
-        choices={"A": "HTML", "B": "CSS", "C": "SQL", "D": "C++"},
-        correct="B",
-    ),
-    Question(
-        prompt="Which data structure uses FIFO order?",
-        choices={"A": "Stack", "B": "Queue", "C": "Tree", "D": "Graph"},
-        correct="B",
-    ),
-    Question(
-        prompt="Which ocean is the largest?",
-        choices={"A": "Atlantic", "B": "Indian",
-                 "C": "Pacific", "D": "Arctic"},
-        correct="C",
-    ),
-    Question(
-        prompt="Which device converts AC to DC?",
-        choices={"A": "Transformer", "B": "Rectifier",
-                 "C": "Inverter", "D": "Regulator"},
-        correct="B",
-    ),
-    Question(
-        prompt="What is the capital of Sweden?",
-        choices={"A": "Gothenburg", "B": "Stockholm",
-                 "C": "Malmö", "D": "Uppsala"},
-        correct="B",
-    ),
-    Question(
-        prompt="Which sorting algorithm has average complexity O(n log n)?",
-        choices={"A": "Bubble Sort", "B": "Insertion Sort",
-                 "C": "Merge Sort", "D": "Selection Sort"},
-        correct="C",
-    ),
-    Question(
-        prompt="What is the chemical symbol for Gold?",
-        choices={"A": "Gd", "B": "Go", "C": "Au", "D": "Ag"},
-        correct="C",
-    ),
-    Question(
-        prompt="Which port does HTTPS typically use?",
-        choices={"A": "80", "B": "21", "C": "22", "D": "443"},
-        correct="D",
-    ),
-    Question(
-        prompt="Which mathematician introduced the set of axioms for Euclidean geometry?",
-        choices={"A": "Pythagoras", "B": "Euclid",
-                 "C": "Archimedes", "D": "Newton"},
-        correct="B",
-    ),
-    Question(
-        prompt="What does RAM stand for?",
-        choices={"A": "Random Access Memory", "B": "Readily Available Module",
-                 "C": "Rapid Access Module", "D": "Read-Allocate Memory"},
-        correct="A",
-    ),
-    Question(
-        prompt="Which company created the Linux kernel?",
-        choices={"A": "Red Hat", "B": "IBM",
-                 "C": "Linus Torvalds", "D": "Canonical"},
-        correct="C",
-        hint="Not a company 😉"
-    ),
+    Question(prompt="Which of these animals is known for building dams?", choices={
+             "A": "Beaver", "B": "Otter", "C": "Seal", "D": "Walrus"}, correct="A", hint="Flat tail, big teeth."),
+    Question(prompt="In Python, what does the 'len' function return?", choices={
+             "A": "The last element", "B": "The length/size", "C": "The first index", "D": "The memory address"}, correct="B", hint="Think: how many?"),
+    Question(prompt="Which planet is known as the Red Planet?", choices={
+             "A": "Venus", "B": "Jupiter", "C": "Mars", "D": "Saturn"}, correct="C"),
+    Question(prompt="What does 'HTTP' stand for?", choices={
+             "A": "HyperText Transfer Protocol", "B": "High Transfer Text Protocol", "C": "Hyperlink Transmission Process", "D": "Host Transfer Type Protocol"}, correct="A"),
+    Question(prompt="Which language is primarily used for styling web pages?", choices={
+             "A": "HTML", "B": "CSS", "C": "SQL", "D": "C++"}, correct="B"),
+    Question(prompt="Which data structure uses FIFO order?", choices={
+             "A": "Stack", "B": "Queue", "C": "Tree", "D": "Graph"}, correct="B"),
+    Question(prompt="Which ocean is the largest?", choices={
+             "A": "Atlantic", "B": "Indian", "C": "Pacific", "D": "Arctic"}, correct="C"),
+    Question(prompt="Which device converts AC to DC?", choices={
+             "A": "Transformer", "B": "Rectifier", "C": "Inverter", "D": "Regulator"}, correct="B"),
+    Question(prompt="What is the capital of Sweden?", choices={
+             "A": "Gothenburg", "B": "Stockholm", "C": "Malmö", "D": "Uppsala"}, correct="B"),
+    Question(prompt="Which sorting algorithm has average complexity O(n log n)?", choices={
+             "A": "Bubble Sort", "B": "Insertion Sort", "C": "Merge Sort", "D": "Selection Sort"}, correct="C"),
+    Question(prompt="What is the chemical symbol for Gold?", choices={
+             "A": "Gd", "B": "Go", "C": "Au", "D": "Ag"}, correct="C"),
+    Question(prompt="Which port does HTTPS typically use?", choices={
+             "A": "80", "B": "21", "C": "22", "D": "443"}, correct="D"),
+    Question(prompt="Which mathematician introduced the set of axioms for Euclidean geometry?", choices={
+             "A": "Pythagoras", "B": "Euclid", "C": "Archimedes", "D": "Newton"}, correct="B"),
+    Question(prompt="What does RAM stand for?", choices={
+             "A": "Random Access Memory", "B": "Readily Available Module", "C": "Rapid Access Module", "D": "Read-Allocate Memory"}, correct="A"),
+    Question(prompt="Which company created the Linux kernel?", choices={
+             "A": "Red Hat", "B": "IBM", "C": "Linus Torvalds", "D": "Canonical"}, correct="C", hint="Not a company 😉"),
 ]
 
 
 # ---------------------- Loading ----------------------
-
 def load_questions_from_file(path: str) -> List[Question]:
     with open(path, "r", encoding="utf-8") as f:
         data = json.load(f)
@@ -373,10 +307,9 @@ def load_questions_from_file(path: str) -> List[Question]:
 
 
 # ---------------------- Main ----------------------
-
 def main(argv: List[str]) -> int:
     rng = random.Random()
-    rng.seed()  # system entropy
+    rng.seed()
     if len(argv) > 2:
         print("Usage: python millionaire.py [questions.json]")
         return 2
@@ -389,14 +322,12 @@ def main(argv: List[str]) -> int:
     else:
         questions = SAMPLE_QUESTIONS
 
-    # You can shuffle questions for variability, but keep ladder length in sync
     if len(questions) < len(DEFAULT_LADDER):
         print(c(f"Need at least {len(DEFAULT_LADDER)
                                  } questions (got {len(questions)}).", Style.RED))
         print(c("Tip: reduce DEFAULT_LADDER length or add more questions.", Style.DIM))
         return 1
 
-    # Optionally sample a subset equal to the ladder length
     rng.shuffle(questions)
     questions = questions[: len(DEFAULT_LADDER)]
 
@@ -408,3 +339,4 @@ def main(argv: List[str]) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main(sys.argv))
+
