@@ -185,7 +185,8 @@ class Game:
         print(c("\nWho Wants To Be A (Terminal) Millionaire",
               Style.BOLD, Style.MAGENTA))
         print("Question", self.current_index + 1, "/", len(self.ladder))
-        print("Prize:", c(f"${self.current_prize():,}", Style.YELLOW))
+        print("Prize:", c(f"Schmeckles {
+              self.current_prize():,}", Style.YELLOW))
         if self.lifelines.any_left():
             ll = []
             if self.lifelines.take_shot_uses > 0:
