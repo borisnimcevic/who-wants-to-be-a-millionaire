@@ -239,6 +239,7 @@ class Game:
                 print(c("Correct!", Style.GREEN), c(
                     f"You win ${self.current_prize():,}", Style.YELLOW))
                 self.current_index += 1
+                self.eliminated.clear()
                 if self.current_index == len(self.ladder):
                     print(
                         c("Congratulations! You are a (terminal) millionaire!", Style.MAGENTA, Style.BOLD))
@@ -615,4 +616,3 @@ def main(argv: List[str]) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main(sys.argv))
-
