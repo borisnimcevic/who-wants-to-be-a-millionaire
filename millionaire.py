@@ -20,6 +20,7 @@ from dataclasses import dataclass, field
 from typing import Dict, List, Optional
 from collections import defaultdict
 from itertools import cycle
+from collections import defaultdict, deque
 
 # ---------------------- Styling ----------------------
 
@@ -594,32 +595,37 @@ def load_questions_from_file(path: str) -> List[Question]:
 def balanced_sample_by_category(questions: List[Question], k: int, rng: random.Random) -> List[Question]:
     """
     Return k questions sampled as evenly as possible across categories.
-    Uses round-robin over per-category shuffled lists.
+    Rotates through categories, starting at a random category each run.
+    If a category runs out, it drops from the rotation.
     """
-    # Group questions by category
+    # Group by category
     by_cat: Dict[str, List[Question]] = defaultdict(list)
     for q in questions:
         by_cat[q.category].append(q)
 
-    # Shuffle within each category for randomness
+    # Shuffle questions within each category for randomness
     cats = list(by_cat.keys())
-    rng.shuffle(cats)
     for cat in cats:
         rng.shuffle(by_cat[cat])
 
-    # Round-robin pull 1 from each non-empty category until we have k or run out
+    # Build a rotating deque of categories and randomize the starting point
+    rng.shuffle(cats)  # randomize order first
+    dq = deque(cats)
+    if dq:
+        offset = rng.randrange(len(dq))  # random starting category
+        dq.rotate(-offset)
+
     result: List[Question] = []
-    for cat in cycle(cats):
-        # Stop if reached k or all categories exhausted
-        if len(result) >= k:
-            break
-        # Remove empty categories from rotation (once)
-        if not by_cat[cat]:
-            cats = [c for c in cats if by_cat[c]]  # shrink rotation
-            if not cats:
-                break
-            continue
-        result.append(by_cat[cat].pop())
+    while dq and len(result) < k:
+        cat = dq[0]  # look at current category
+        if by_cat[cat]:
+            # Take one from this category, then rotate to the next
+            result.append(by_cat[cat].pop())
+            dq.rotate(-1)
+        else:
+            # This category is exhausted; remove it from rotation
+            dq.popleft()
+
     return result
 
 
