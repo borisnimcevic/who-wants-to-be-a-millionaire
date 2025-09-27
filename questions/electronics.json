@@ -1,0 +1,167 @@
+[
+  {
+    "prompt": "Which component converts AC to DC?",
+    "choices": {
+      "A": "Resistor",
+      "B": "Rectifier",
+      "C": "Capacitor",
+      "D": "Transformer"
+    },
+    "correct": "B",
+    "category": "ELECTRONICS"
+  },
+  {
+    "prompt": "What does LED stand for?",
+    "choices": {
+      "A": "Light Emitting Diode",
+      "B": "Low Energy Device",
+      "C": "Linear Electric Driver",
+      "D": "Long Emission Display"
+    },
+    "correct": "A",
+    "category": "ELECTRONICS"
+  },
+  {
+    "prompt": "Which unit is used to measure electrical resistance?",
+    "choices": { "A": "Ampere", "B": "Volt", "C": "Ohm", "D": "Watt" },
+    "correct": "C",
+    "category": "ELECTRONICS"
+  },
+  {
+    "prompt": "Which law explains electromagnetic induction?",
+    "choices": {
+      "A": "Ohm's Law",
+      "B": "Faraday's Law",
+      "C": "Coulomb's Law",
+      "D": "Newton's Law"
+    },
+    "correct": "B",
+    "category": "ELECTRONICS"
+  },
+  {
+    "prompt": "Which device stores charge and can release it quickly?",
+    "choices": { "A": "Diode", "B": "Inductor", "C": "Capacitor", "D": "Resistor" },
+    "correct": "C",
+    "category": "ELECTRONICS"
+  },
+  {
+    "prompt": "What does a transistor primarily do?",
+    "choices": {
+      "A": "Amplify or switch signals",
+      "B": "Store data",
+      "C": "Generate electricity",
+      "D": "Measure resistance"
+    },
+    "correct": "A",
+    "category": "ELECTRONICS"
+  },
+  {
+    "prompt": "Which material is commonly used as a semiconductor?",
+    "choices": { "A": "Copper", "B": "Iron", "C": "Silicon", "D": "Carbon" },
+    "correct": "C",
+    "category": "ELECTRONICS"
+  },
+  {
+    "prompt": "Which unit measures electrical power?",
+    "choices": { "A": "Joule", "B": "Watt", "C": "Volt", "D": "Tesla" },
+    "correct": "B",
+    "category": "ELECTRONICS"
+  },
+  {
+    "prompt": "What is the main function of a fuse?",
+    "choices": {
+      "A": "Store energy",
+      "B": "Amplify current",
+      "C": "Protect circuits from overcurrent",
+      "D": "Switch signals"
+    },
+    "correct": "C",
+    "category": "ELECTRONICS"
+  },
+  {
+    "prompt": "Which component opposes changes in current flow?",
+    "choices": { "A": "Capacitor", "B": "Inductor", "C": "Diode", "D": "Resistor" },
+    "correct": "B",
+    "category": "ELECTRONICS"
+  },
+  {
+    "prompt": "What does CPU stand for?",
+    "choices": {
+      "A": "Central Processing Unit",
+      "B": "Computer Power Unit",
+      "C": "Central Peripheral Unit",
+      "D": "Circuit Processing Unit"
+    },
+    "correct": "A",
+    "category": "ELECTRONICS"
+  },
+  {
+    "prompt": "Which unit is used to measure electrical current?",
+    "choices": { "A": "Volt", "B": "Ohm", "C": "Ampere", "D": "Watt" },
+    "correct": "C",
+    "category": "ELECTRONICS"
+  },
+  {
+    "prompt": "Which device controls current flow in one direction only?",
+    "choices": { "A": "Diode", "B": "Capacitor", "C": "Inductor", "D": "Resistor" },
+    "correct": "A",
+    "category": "ELECTRONICS"
+  },
+  {
+    "prompt": "What is the binary system base?",
+    "choices": { "A": "Base 2", "B": "Base 8", "C": "Base 10", "D": "Base 16" },
+    "correct": "A",
+    "category": "ELECTRONICS"
+  },
+  {
+    "prompt": "Which device amplifies weak signals?",
+    "choices": {
+      "A": "Resistor",
+      "B": "Transistor",
+      "C": "Capacitor",
+      "D": "Transformer"
+    },
+    "correct": "B",
+    "category": "ELECTRONICS"
+  },
+  {
+    "prompt": "What does AC stand for in electricity?",
+    "choices": {
+      "A": "Active Current",
+      "B": "Alternate Current",
+      "C": "Alternating Current",
+      "D": "Absolute Current"
+    },
+    "correct": "C",
+    "category": "ELECTRONICS"
+  },
+  {
+    "prompt": "Which frequency band does Wi-Fi commonly use?",
+    "choices": {
+      "A": "900 MHz",
+      "B": "2.4 GHz and 5 GHz",
+      "C": "50 Hz",
+      "D": "100 MHz"
+    },
+    "correct": "B",
+    "category": "ELECTRONICS"
+  },
+  {
+    "prompt": "Which electronic component resists current flow?",
+    "choices": { "A": "Resistor", "B": "Capacitor", "C": "Transistor", "D": "Diode" },
+    "correct": "A",
+    "category": "ELECTRONICS"
+  },
+  {
+    "prompt": "What is the SI unit of capacitance?",
+    "choices": { "A": "Farad", "B": "Ohm", "C": "Tesla", "D": "Watt" },
+    "correct": "A",
+    "category": "ELECTRONICS"
+  },
+  {
+    "prompt": "Which device converts digital signals into analog?",
+    "choices": { "A": "ADC", "B": "DAC", "C": "CPU", "D": "ROM" },
+    "correct": "B",
+    "category": "ELECTRONICS"
+  }
+]

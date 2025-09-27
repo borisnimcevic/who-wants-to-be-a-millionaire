@@ -1,0 +1,217 @@
+[
+  {
+    "prompt": "What does CRM stand for?",
+    "choices": {
+      "A": "Customer Revenue Management",
+      "B": "Customer Relationship Management",
+      "C": "Consumer Resource Mapping",
+      "D": "Client Retention Model"
+    },
+    "correct": "B",
+    "category": "SALES"
+  },
+  {
+    "prompt": "What is an 'upsell'?",
+    "choices": {
+      "A": "Offering a discount",
+      "B": "Selling a higher-value product",
+      "C": "Renewing a subscription",
+      "D": "Customer complaint handling"
+    },
+    "correct": "B",
+    "category": "SALES"
+  },
+  {
+    "prompt": "What is the 'sales pipeline'?",
+    "choices": {
+      "A": "Customer complaint queue",
+      "B": "Stages of sales process",
+      "C": "Logistics supply chain",
+      "D": "Marketing campaign list"
+    },
+    "correct": "B",
+    "category": "SALES"
+  },
+  {
+    "prompt": "What is a common closing technique in sales?",
+    "choices": {
+      "A": "The assumptive close",
+      "B": "The passive close",
+      "C": "The silent close",
+      "D": "The evasive close"
+    },
+    "correct": "A",
+    "category": "SALES"
+  },
+  {
+    "prompt": "In sales, what does 'churn rate' measure?",
+    "choices": {
+      "A": "Number of new customers",
+      "B": "Rate of customer loss",
+      "C": "Total revenue per client",
+      "D": "Upsell success"
+    },
+    "correct": "B",
+    "category": "SALES"
+  },
+  {
+    "prompt": "Which sales strategy focuses on solving customer problems?",
+    "choices": {
+      "A": "Transactional selling",
+      "B": "Solution selling",
+      "C": "Cold calling",
+      "D": "Hard closing"
+    },
+    "correct": "B",
+    "category": "SALES"
+  },
+  {
+    "prompt": "Which of these is a key benefit of consultative selling?",
+    "choices": {
+      "A": "Shorter sales cycles",
+      "B": "Higher trust and loyalty",
+      "C": "Cheaper marketing",
+      "D": "Immediate conversions"
+    },
+    "correct": "B",
+    "category": "SALES"
+  },
+  {
+    "prompt": "In sales forecasting, 'bottom-up' means starting with what?",
+    "choices": {
+      "A": "Industry averages",
+      "B": "Customer segments and units sold",
+      "C": "CEO projections",
+      "D": "Historical profits"
+    },
+    "correct": "B",
+    "category": "SALES"
+  },
+  {
+    "prompt": "Which stage comes last in the AIDA sales model?",
+    "choices": { "A": "Awareness", "B": "Interest", "C": "Desire", "D": "Action" },
+    "correct": "D",
+    "category": "SALES"
+  },
+  {
+    "prompt": "What is 'cross-selling'?",
+    "choices": {
+      "A": "Selling to competitors",
+      "B": "Selling complementary products",
+      "C": "Selling to new industries",
+      "D": "International selling"
+    },
+    "correct": "B",
+    "category": "SALES"
+  },
+  {
+    "prompt": "What does 'cold calling' mean?",
+    "choices": {
+      "A": "Calling existing customers",
+      "B": "Calling new leads without prior contact",
+      "C": "Calling after an email introduction",
+      "D": "Calling during winter season"
+    },
+    "correct": "B",
+    "category": "SALES"
+  },
+  {
+    "prompt": "What is a 'sales quota'?",
+    "choices": {
+      "A": "Maximum discount allowed",
+      "B": "Target sales goal",
+      "C": "Customer database",
+      "D": "Sales meeting agenda"
+    },
+    "correct": "B",
+    "category": "SALES"
+  },
+  {
+    "prompt": "Which method focuses on building long-term customer trust?",
+    "choices": {
+      "A": "Transactional selling",
+      "B": "Relationship selling",
+      "C": "Cold calling",
+      "D": "Price dumping"
+    },
+    "correct": "B",
+    "category": "SALES"
+  },
+  {
+    "prompt": "Which tool automates lead tracking?",
+    "choices": {
+      "A": "CRM software",
+      "B": "Email client",
+      "C": "Spreadsheet",
+      "D": "Chat app"
+    },
+    "correct": "A",
+    "category": "SALES"
+  },
+  {
+    "prompt": "What is the main purpose of a sales pitch?",
+    "choices": {
+      "A": "Collect payments",
+      "B": "Introduce and persuade customers",
+      "C": "Deliver products",
+      "D": "Resolve complaints"
+    },
+    "correct": "B",
+    "category": "SALES"
+  },
+  {
+    "prompt": "Which objection is most common in sales?",
+    "choices": {
+      "A": "No time",
+      "B": "Price is too high",
+      "C": "Already satisfied with current provider",
+      "D": "All of the above"
+    },
+    "correct": "D",
+    "category": "SALES"
+  },
+  {
+    "prompt": "What does 'CLV' stand for?",
+    "choices": {
+      "A": "Customer Loyalty Value",
+      "B": "Client Lifetime Value",
+      "C": "Conversion Lead Volume",
+      "D": "Customer Leverage Variable"
+    },
+    "correct": "B",
+    "category": "SALES"
+  },
+  {
+    "prompt": "What is a 'sales funnel' used to track?",
+    "choices": {
+      "A": "Team productivity",
+      "B": "Customer journey from awareness to purchase",
+      "C": "Product delivery times",
+      "D": "Lead database"
+    },
+    "correct": "B",
+    "category": "SALES"
+  },
+  {
+    "prompt": "What is 'value selling'?",
+    "choices": {
+      "A": "Discount-focused sales",
+      "B": "Emphasizing product benefits over price",
+      "C": "Selling at cost price",
+      "D": "Focusing only on features"
+    },
+    "correct": "B",
+    "category": "SALES"
+  },
+  {
+    "prompt": "Which approach emphasizes listening to the customer first?",
+    "choices": {
+      "A": "Consultative selling",
+      "B": "Hard closing",
+      "C": "Cold pitching",
+      "D": "Passive selling"
+    },
+    "correct": "A",
+    "category": "SALES"
+  }
+]

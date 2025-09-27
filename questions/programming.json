@@ -1,0 +1,162 @@
+[
+  {
+    "prompt": "Which programming paradigm is based on objects and classes?",
+    "choices": {
+      "A": "Functional",
+      "B": "Imperative",
+      "C": "Object-Oriented",
+      "D": "Procedural"
+    },
+    "correct": "C",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which language is primarily used for web front-end development?",
+    "choices": { "A": "Python", "B": "JavaScript", "C": "C++", "D": "Java" },
+    "correct": "B",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "What does 'API' stand for?",
+    "choices": {
+      "A": "Application Programming Interface",
+      "B": "Automated Program Instruction",
+      "C": "Advanced Protocol Integration",
+      "D": "Application Process Interpreter"
+    },
+    "correct": "A",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which sorting algorithm has average time complexity O(n log n)?",
+    "choices": {
+      "A": "Bubble Sort",
+      "B": "Quick Sort",
+      "C": "Insertion Sort",
+      "D": "Selection Sort"
+    },
+    "correct": "B",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which symbol is commonly used for comments in Python?",
+    "choices": { "A": "//", "B": "#", "C": "/* */", "D": "--" },
+    "correct": "B",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which data structure uses FIFO order?",
+    "choices": { "A": "Stack", "B": "Queue", "C": "Tree", "D": "Graph" },
+    "correct": "B",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which keyword is used to define a function in Python?",
+    "choices": { "A": "func", "B": "def", "C": "function", "D": "fn" },
+    "correct": "B",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which type of error occurs at runtime?",
+    "choices": {
+      "A": "Syntax Error",
+      "B": "Logical Error",
+      "C": "Runtime Error",
+      "D": "Compilation Error"
+    },
+    "correct": "C",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which operator is used for string concatenation in Python?",
+    "choices": { "A": "+", "B": "&", "C": ".", "D": "++" },
+    "correct": "A",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which keyword is used to create a class in Python?",
+    "choices": { "A": "object", "B": "new", "C": "class", "D": "struct" },
+    "correct": "C",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which language is known as the 'mother of all languages'?",
+    "choices": { "A": "C", "B": "Python", "C": "Java", "D": "Assembly" },
+    "correct": "A",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "What does SQL stand for?",
+    "choices": {
+      "A": "Structured Query Language",
+      "B": "Simple Question Logic",
+      "C": "System Query Loop",
+      "D": "Sequential Queue Logic"
+    },
+    "correct": "A",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which data structure uses LIFO order?",
+    "choices": { "A": "Stack", "B": "Queue", "C": "Tree", "D": "Array" },
+    "correct": "A",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which keyword is used for inheritance in Python?",
+    "choices": {
+      "A": "extends",
+      "B": "inherits",
+      "C": "class",
+      "D": "(class Sub(Base))"
+    },
+    "correct": "D",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which language is mainly used for Android app development?",
+    "choices": { "A": "Swift", "B": "Kotlin", "C": "C#", "D": "Ruby" },
+    "correct": "B",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which programming concept is based on 'functions as first-class citizens'?",
+    "choices": {
+      "A": "Object-Oriented",
+      "B": "Functional programming",
+      "C": "Imperative programming",
+      "D": "Procedural programming"
+    },
+    "correct": "B",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "What is the default data type for numbers with decimals in Python?",
+    "choices": { "A": "int", "B": "float", "C": "double", "D": "decimal" },
+    "correct": "B",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which Python library is used for data analysis?",
+    "choices": { "A": "Flask", "B": "NumPy", "C": "Pandas", "D": "Requests" },
+    "correct": "C",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "What symbol is used for exponentiation in Python?",
+    "choices": { "A": "^", "B": "**", "C": "exp()", "D": "^^" },
+    "correct": "B",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which sorting algorithm is stable?",
+    "choices": {
+      "A": "Merge Sort",
+      "B": "Quick Sort",
+      "C": "Heap Sort",
+      "D": "Selection Sort"
+    },
+    "correct": "A",
+    "category": "PROGRAMMING"
+  }
+]

@@ -1,0 +1,197 @@
+[
+  {
+    "prompt": "Which metric indicates how many times an ad is shown?",
+    "choices": {
+      "A": "CTR",
+      "B": "Impressions",
+      "C": "Conversion Rate",
+      "D": "Bounce Rate"
+    },
+    "correct": "B",
+    "category": "MARKETING"
+  },
+  {
+    "prompt": "Which pricing strategy sets a low price to enter a competitive market?",
+    "choices": {
+      "A": "Skimming",
+      "B": "Penetration",
+      "C": "Premium",
+      "D": "Value-based"
+    },
+    "correct": "B",
+    "category": "MARKETING"
+  },
+  {
+    "prompt": "In SEO, what does SERP stand for?",
+    "choices": {
+      "A": "Search Engine Results Page",
+      "B": "Search Engine Ranking Policy",
+      "C": "Search Engine Reach Percentage",
+      "D": "Search Engagement Rate Process"
+    },
+    "correct": "A",
+    "category": "MARKETING"
+  },
+  {
+    "prompt": "Which psychological principle uses scarcity to increase demand?",
+    "choices": {
+      "A": "Reciprocity",
+      "B": "Anchoring",
+      "C": "Scarcity Effect",
+      "D": "Priming"
+    },
+    "correct": "C",
+    "category": "MARKETING"
+  },
+  {
+    "prompt": "What is the main goal of content marketing?",
+    "choices": {
+      "A": "Direct sales",
+      "B": "Customer value and engagement",
+      "C": "Paid advertising",
+      "D": "SEO bypass"
+    },
+    "correct": "B",
+    "category": "MARKETING"
+  },
+  {
+    "prompt": "Which social media platform is most associated with B2B marketing?",
+    "choices": { "A": "Facebook", "B": "Instagram", "C": "LinkedIn", "D": "Snapchat" },
+    "correct": "C",
+    "category": "MARKETING"
+  },
+  {
+    "prompt": "Which color is often used in marketing to trigger urgency?",
+    "choices": { "A": "Green", "B": "Blue", "C": "Red", "D": "Purple" },
+    "correct": "C",
+    "category": "MARKETING"
+  },
+  {
+    "prompt": "A marketing funnel typically starts with which stage?",
+    "choices": {
+      "A": "Awareness",
+      "B": "Consideration",
+      "C": "Decision",
+      "D": "Retention"
+    },
+    "correct": "A",
+    "category": "MARKETING"
+  },
+  {
+    "prompt": "Which KPI measures the cost of acquiring one new customer?",
+    "choices": { "A": "CPC", "B": "CAC", "C": "CPA", "D": "CLV" },
+    "correct": "B",
+    "category": "MARKETING"
+  },
+  {
+    "prompt": "What does 'viral marketing' rely on?",
+    "choices": {
+      "A": "Paid ads",
+      "B": "Word of mouth and sharing",
+      "C": "Telemarketing",
+      "D": "Cold emailing"
+    },
+    "correct": "B",
+    "category": "MARKETING"
+  },
+  {
+    "prompt": "Which strategy uses influencers to promote products?",
+    "choices": {
+      "A": "Guerrilla marketing",
+      "B": "Influencer marketing",
+      "C": "Content marketing",
+      "D": "Event marketing"
+    },
+    "correct": "B",
+    "category": "MARKETING"
+  },
+  {
+    "prompt": "Which marketing concept emphasizes product quality over advertising?",
+    "choices": {
+      "A": "Production concept",
+      "B": "Selling concept",
+      "C": "Marketing concept",
+      "D": "Societal concept"
+    },
+    "correct": "A",
+    "category": "MARKETING"
+  },
+  {
+    "prompt": "What does PPC stand for in online marketing?",
+    "choices": {
+      "A": "Pay Per Click",
+      "B": "Price Promotion Campaign",
+      "C": "Personalized Product Content",
+      "D": "Performance Per Conversion"
+    },
+    "correct": "A",
+    "category": "MARKETING"
+  },
+  {
+    "prompt": "Which method involves small, unconventional marketing tactics?",
+    "choices": {
+      "A": "Guerrilla marketing",
+      "B": "Mass marketing",
+      "C": "Direct mail",
+      "D": "TV ads"
+    },
+    "correct": "A",
+    "category": "MARKETING"
+  },
+  {
+    "prompt": "What is 'brand equity'?",
+    "choices": {
+      "A": "Company assets",
+      "B": "Value of brand recognition",
+      "C": "Stock value of company",
+      "D": "Profit from one product line"
+    },
+    "correct": "B",
+    "category": "MARKETING"
+  },
+  {
+    "prompt": "Which pricing strategy adjusts based on demand in real time?",
+    "choices": {
+      "A": "Skimming",
+      "B": "Penetration",
+      "C": "Dynamic pricing",
+      "D": "Cost-plus pricing"
+    },
+    "correct": "C",
+    "category": "MARKETING"
+  },
+  {
+    "prompt": "Which marketing channel is best for real-time engagement?",
+    "choices": { "A": "TV ads", "B": "Email", "C": "Social media", "D": "Billboards" },
+    "correct": "C",
+    "category": "MARKETING"
+  },
+  {
+    "prompt": "What is 'remarketing'?",
+    "choices": {
+      "A": "Selling new products",
+      "B": "Targeting previous visitors with ads",
+      "C": "Changing brand name",
+      "D": "Launching in new countries"
+    },
+    "correct": "B",
+    "category": "MARKETING"
+  },
+  {
+    "prompt": "Which factor is central to Maslow’s hierarchy in marketing?",
+    "choices": {
+      "A": "Basic human needs",
+      "B": "Government policy",
+      "C": "Competitor analysis",
+      "D": "Distribution channels"
+    },
+    "correct": "A",
+    "category": "MARKETING"
+  },
+  {
+    "prompt": "Which color is commonly used in marketing for eco-friendly brands?",
+    "choices": { "A": "Blue", "B": "Green", "C": "Red", "D": "Black" },
+    "correct": "B",
+    "category": "MARKETING"
+  }
+]

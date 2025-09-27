@@ -1,0 +1,97 @@
+[
+  {
+    "prompt": "What percentage of Earth's water is freshwater?",
+    "choices": { "A": "2.5%", "B": "10%", "C": "25%", "D": "50%" },
+    "correct": "A",
+    "category": "WATER"
+  },
+  {
+    "prompt": "!!!Change me!!!",
+    "choices": {
+      "A": "Precipitation",
+      "B": "Condensation",
+      "C": "Infiltration",
+      "D": "Transpiration"
+    },
+    "correct": "B",
+    "category": "WATER"
+  },
+  {
+    "prompt": "Which ocean current is known as a 'conveyor belt' for global heat transfer?",
+    "choices": {
+      "A": "Gulf Stream",
+      "B": "El Niño",
+      "C": "Humboldt Current",
+      "D": "Monsoon Drift"
+    },
+    "correct": "A",
+    "category": "WATER"
+  },
+  {
+    "prompt": "What is desalination used for?",
+    "choices": {
+      "A": "Removing salt from seawater",
+      "B": "Adding minerals to freshwater",
+      "C": "Filtering groundwater",
+      "D": "Converting vapor to liquid"
+    },
+    "correct": "A",
+    "category": "WATER"
+  },
+  {
+    "prompt": "Which country has the largest renewable freshwater resources?",
+    "choices": { "A": "Brazil", "B": "Canada", "C": "Russia", "D": "China" },
+    "correct": "A",
+    "category": "WATER"
+  },
+  {
+    "prompt": "Which property allows water to rise in thin tubes against gravity?",
+    "choices": {
+      "A": "Viscosity",
+      "B": "Capillary action",
+      "C": "Density anomaly",
+      "D": "Hydrophobicity"
+    },
+    "correct": "B",
+    "category": "WATER"
+  },
+  {
+    "prompt": "What is eutrophication primarily caused by?",
+    "choices": {
+      "A": "Excess nutrients",
+      "B": "Oil spills",
+      "C": "Thermal pollution",
+      "D": "Acid rain"
+    },
+    "correct": "A",
+    "category": "WATER"
+  },
+  {
+    "prompt": "Which of these is the largest body of freshwater by volume?",
+    "choices": {
+      "A": "Lake Victoria",
+      "B": "Lake Superior",
+      "C": "Lake Baikal",
+      "D": "Caspian Sea"
+    },
+    "correct": "C",
+    "category": "WATER"
+  },
+  {
+    "prompt": "Which process purifies water naturally as it passes through soil?",
+    "choices": {
+      "A": "Filtration",
+      "B": "Evaporation",
+      "C": "Desalination",
+      "D": "Oxidation"
+    },
+    "correct": "A",
+    "category": "WATER"
+  },
+  {
+    "prompt": "Which country built the 'Great Man-Made River' project to transport water?",
+    "choices": { "A": "Egypt", "B": "Libya", "C": "Saudi Arabia", "D": "Iran" },
+    "correct": "B",
+    "category": "WATER"
+  }
+]

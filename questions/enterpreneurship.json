@@ -1,0 +1,217 @@
+[
+  {
+    "prompt": "What is a 'minimum viable product' (MVP)?",
+    "choices": {
+      "A": "A prototype with core features",
+      "B": "The final polished product",
+      "C": "A premium version of a product",
+      "D": "An idea without execution"
+    },
+    "correct": "A",
+    "category": "ENTREPRENEURSHIP"
+  },
+  {
+    "prompt": "Which document outlines a startup’s vision, mission, and strategy?",
+    "choices": {
+      "A": "Term sheet",
+      "B": "Business plan",
+      "C": "Pitch deck",
+      "D": "Balance sheet"
+    },
+    "correct": "B",
+    "category": "ENTREPRENEURSHIP"
+  },
+  {
+    "prompt": "Which type of funding involves giving up equity?",
+    "choices": {
+      "A": "Debt financing",
+      "B": "Bootstrapping",
+      "C": "Venture capital",
+      "D": "Revenue-based financing"
+    },
+    "correct": "C",
+    "category": "ENTREPRENEURSHIP"
+  },
+  {
+    "prompt": "Which entrepreneur co-founded Microsoft?",
+    "choices": {
+      "A": "Steve Jobs",
+      "B": "Larry Page",
+      "C": "Bill Gates",
+      "D": "Elon Musk"
+    },
+    "correct": "C",
+    "category": "ENTREPRENEURSHIP"
+  },
+  {
+    "prompt": "What is a common characteristic of successful entrepreneurs?",
+    "choices": {
+      "A": "Risk aversion",
+      "B": "Resilience",
+      "C": "Strict conformity",
+      "D": "Avoiding innovation"
+    },
+    "correct": "B",
+    "category": "ENTREPRENEURSHIP"
+  },
+  {
+    "prompt": "Which startup methodology emphasizes quick testing and iteration?",
+    "choices": {
+      "A": "Waterfall",
+      "B": "Lean Startup",
+      "C": "Agile Manufacturing",
+      "D": "Six Sigma"
+    },
+    "correct": "B",
+    "category": "ENTREPRENEURSHIP"
+  },
+  {
+    "prompt": "Which entrepreneur founded SpaceX?",
+    "choices": {
+      "A": "Richard Branson",
+      "B": "Elon Musk",
+      "C": "Jeff Bezos",
+      "D": "Larry Ellison"
+    },
+    "correct": "B",
+    "category": "ENTREPRENEURSHIP"
+  },
+  {
+    "prompt": "What is a 'unicorn' company?",
+    "choices": {
+      "A": "A business with magical branding",
+      "B": "A startup valued at $1B+",
+      "C": "A one-founder business",
+      "D": "A non-profit with global reach"
+    },
+    "correct": "B",
+    "category": "ENTREPRENEURSHIP"
+  },
+  {
+    "prompt": "Which entrepreneur started Amazon in a garage?",
+    "choices": {
+      "A": "Steve Jobs",
+      "B": "Jeff Bezos",
+      "C": "Jack Ma",
+      "D": "Mark Zuckerberg"
+    },
+    "correct": "B",
+    "category": "ENTREPRENEURSHIP"
+  },
+  {
+    "prompt": "What is 'bootstrapping' in entrepreneurship?",
+    "choices": {
+      "A": "Seeking early VC funding",
+      "B": "Self-funding a business",
+      "C": "Crowdfunding",
+      "D": "Using government grants"
+    },
+    "correct": "B",
+    "category": "ENTREPRENEURSHIP"
+  },
+  {
+    "prompt": "Which entrepreneur founded Alibaba?",
+    "choices": {
+      "A": "Elon Musk",
+      "B": "Jack Ma",
+      "C": "Jeff Bezos",
+      "D": "Warren Buffett"
+    },
+    "correct": "B",
+    "category": "ENTREPRENEURSHIP"
+  },
+  {
+    "prompt": "Which document do investors receive outlining startup terms?",
+    "choices": {
+      "A": "Balance sheet",
+      "B": "Term sheet",
+      "C": "Invoice",
+      "D": "Audit report"
+    },
+    "correct": "B",
+    "category": "ENTREPRENEURSHIP"
+  },
+  {
+    "prompt": "Which entrepreneur coined the phrase 'Stay hungry, stay foolish'?",
+    "choices": {
+      "A": "Steve Jobs",
+      "B": "Larry Page",
+      "C": "Elon Musk",
+      "D": "Mark Cuban"
+    },
+    "correct": "A",
+    "category": "ENTREPRENEURSHIP"
+  },
+  {
+    "prompt": "What is the 'burn rate' of a startup?",
+    "choices": {
+      "A": "Monthly expenses",
+      "B": "Annual revenue",
+      "C": "Employee turnover",
+      "D": "Customer growth"
+    },
+    "correct": "A",
+    "category": "ENTREPRENEURSHIP"
+  },
+  {
+    "prompt": "Which startup funding method uses small investments from many people?",
+    "choices": {
+      "A": "Venture capital",
+      "B": "Crowdfunding",
+      "C": "Private equity",
+      "D": "Angel investing"
+    },
+    "correct": "B",
+    "category": "ENTREPRENEURSHIP"
+  },
+  {
+    "prompt": "Which entrepreneur started Tesla Motors?",
+    "choices": {
+      "A": "Jeff Bezos",
+      "B": "Bill Gates",
+      "C": "Elon Musk",
+      "D": "Larry Page"
+    },
+    "correct": "C",
+    "category": "ENTREPRENEURSHIP"
+  },
+  {
+    "prompt": "Which entrepreneur is associated with Virgin Group?",
+    "choices": {
+      "A": "Elon Musk",
+      "B": "Richard Branson",
+      "C": "Mark Cuban",
+      "D": "Peter Thiel"
+    },
+    "correct": "B",
+    "category": "ENTREPRENEURSHIP"
+  },
+  {
+    "prompt": "Which term describes selling a startup to another company?",
+    "choices": { "A": "Acquisition", "B": "Merger", "C": "IPO", "D": "Spin-off" },
+    "correct": "A",
+    "category": "ENTREPRENEURSHIP"
+  },
+  {
+    "prompt": "Which entrepreneur is famous for investing on 'Shark Tank'?",
+    "choices": {
+      "A": "Mark Cuban",
+      "B": "Elon Musk",
+      "C": "Jack Ma",
+      "D": "Bill Gates"
+    },
+    "correct": "A",
+    "category": "ENTREPRENEURSHIP"
+  },
+  {
+    "prompt": "Which entrepreneur co-founded Google?",
+    "choices": {
+      "A": "Larry Page and Sergey Brin",
+      "B": "Jeff Bezos and Andy Jassy",
+      "C": "Bill Gates and Paul Allen",
+      "D": "Steve Jobs and Steve Wozniak"
+    },
+    "correct": "A",
+    "category": "ENTREPRENEURSHIP"
+  }
+]
