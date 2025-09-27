@@ -1,0 +1,183 @@
+[
+  {
+    "prompt": "What is the term for a loop of yarn on a knitting needle?",
+    "choices": { "A": "Knot", "B": "Stitch", "C": "Loopback", "D": "Weave" },
+    "correct": "B",
+    "category": "TEXTILES"
+  },
+  {
+    "prompt": "Which knitting stitch is the opposite of the knit stitch?",
+    "choices": { "A": "Slip", "B": "Cast on", "C": "Purl", "D": "Bind off" },
+    "correct": "C",
+    "category": "TEXTILES"
+  },
+  {
+    "prompt": "What tool is used to measure small lengths in sewing?",
+    "choices": { "A": "Gauge ruler", "B": "Measuring tape", "C": "Tailor’s chalk", "D": "Seam ripper" },
+    "correct": "B",
+    "category": "TEXTILES"
+  },
+  {
+    "prompt": "What is the process of securing stitches at the end of knitting called?",
+    "choices": { "A": "Casting on", "B": "Casting off", "C": "Blocking", "D": "Seaming" },
+    "correct": "B",
+    "category": "TEXTILES"
+  },
+  {
+    "prompt": "Which material is most commonly used for hand knitting yarn?",
+    "choices": { "A": "Cotton", "B": "Wool", "C": "Silk", "D": "Polyester" },
+    "correct": "B",
+    "category": "TEXTILES"
+  },
+  {
+    "prompt": "What is the purpose of a seam ripper?",
+    "choices": { "A": "Cutting fabric", "B": "Removing stitches", "C": "Marking patterns", "D": "Pressing seams" },
+    "correct": "B",
+    "category": "TEXTILES"
+  },
+  {
+    "prompt": "What is the term for the horizontal threads in woven fabric?",
+    "choices": { "A": "Warp", "B": "Weft", "C": "Bias", "D": "Pile" },
+    "correct": "B",
+    "category": "TEXTILES"
+  },
+  {
+    "prompt": "Which tool is used to prevent yarn balls from tangling?",
+    "choices": { "A": "Yarn swift", "B": "Seam gauge", "C": "Awl", "D": "Needle minder" },
+    "correct": "A",
+    "category": "TEXTILES"
+  },
+  {
+    "prompt": "What is the stretchy direction in knit fabric called?",
+    "choices": { "A": "Grain", "B": "Bias", "C": "Crosswise", "D": "Selvage" },
+    "correct": "B",
+    "category": "TEXTILES"
+  },
+  {
+    "prompt": "What does 'blocking' do in knitting?",
+    "choices": { "A": "Loosens stitches", "B": "Shapes and sets the final piece", "C": "Secures ends", "D": "Makes yarn stronger" },
+    "correct": "B",
+    "category": "TEXTILES"
+  },
+  {
+    "prompt": "What is a pattern piece without seam allowance called?",
+    "choices": { "A": "Raw", "B": "Trimmed", "C": "Cut-on", "D": "Net" },
+    "correct": "D",
+    "category": "TEXTILES"
+  },
+  {
+    "prompt": "Which type of needle is best for hand sewing woven fabrics?",
+    "choices": { "A": "Ballpoint", "B": "Universal", "C": "Sharps", "D": "Tapestry" },
+    "correct": "C",
+    "category": "TEXTILES"
+  },
+  {
+    "prompt": "What is a selvage edge?",
+    "choices": { "A": "Edge that unravels easily", "B": "Finished edge of woven fabric", "C": "Bias-cut edge", "D": "Edge with stitches" },
+    "correct": "B",
+    "category": "TEXTILES"
+  },
+  {
+    "prompt": "Which sewing machine part moves fabric under the needle?",
+    "choices": { "A": "Feed dogs", "B": "Presser foot", "C": "Bobbin case", "D": "Tension disc" },
+    "correct": "A",
+    "category": "TEXTILES"
+  },
+  {
+    "prompt": "What is the process of unraveling knitting called?",
+    "choices": { "A": "Casting back", "B": "Tinking", "C": "Ripping", "D": "Frogging" },
+    "correct": "D",
+    "category": "TEXTILES"
+  },
+  {
+    "prompt": "Which fabric is made from flax fibers?",
+    "choices": { "A": "Silk", "B": "Cotton", "C": "Linen", "D": "Wool" },
+    "correct": "C",
+    "category": "TEXTILES"
+  },
+  {
+    "prompt": "What is the purpose of interfacing in sewing?",
+    "choices": { "A": "Make fabric softer", "B": "Add stability and structure", "C": "Change color", "D": "Prevent shrinkage" },
+    "correct": "B",
+    "category": "TEXTILES"
+  },
+  {
+    "prompt": "What is a common stitch used to join knitted pieces?",
+    "choices": { "A": "Mattress stitch", "B": "Backstitch", "C": "Overlock stitch", "D": "Slip stitch" },
+    "correct": "A",
+    "category": "TEXTILES"
+  },
+  {
+    "prompt": "Which direction is the warp in woven fabric?",
+    "choices": { "A": "Horizontal", "B": "Diagonal", "C": "Vertical", "D": "Circular" },
+    "correct": "C",
+    "category": "TEXTILES"
+  },
+  {
+    "prompt": "What does 'gauge' mean in knitting?",
+    "choices": { "A": "Number of rows and stitches per area", "B": "Length of yarn needed", "C": "Weight of the yarn", "D": "Width of the fabric" },
+    "correct": "A",
+    "category": "TEXTILES"
+  },
+  {
+    "prompt": "What is the name of the stitch that creates a V shape in knitting?",
+    "choices": { "A": "Slip stitch", "B": "Knit stitch", "C": "Purl stitch", "D": "Seed stitch" },
+    "correct": "B",
+    "category": "TEXTILES"
+  },
+  {
+    "prompt": "Which tool is used to press seams flat in sewing?",
+    "choices": { "A": "Tailor’s ham", "B": "Iron", "C": "Clapper", "D": "All of the above" },
+    "correct": "D",
+    "category": "TEXTILES"
+  },
+  {
+    "prompt": "What is an overlock machine also called?",
+    "choices": { "A": "Looper", "B": "Serger", "C": "Coverstitch", "D": "Binder" },
+    "correct": "B",
+    "category": "TEXTILES"
+  },
+  {
+    "prompt": "What type of yarn is best for beginners?",
+    "choices": { "A": "Lace weight", "B": "Bulky", "C": "Fingering", "D": "Cobweb" },
+    "correct": "B",
+    "category": "TEXTILES"
+  },
+  {
+    "prompt": "What is the purpose of a thimble?",
+    "choices": { "A": "Cut fabric", "B": "Measure thread", "C": "Protect finger while hand sewing", "D": "Hold pins" },
+    "correct": "C",
+    "category": "TEXTILES"
+  },
+  {
+    "prompt": "What is a common stitch for hemming garments by hand?",
+    "choices": { "A": "Whip stitch", "B": "Backstitch", "C": "Slip stitch", "D": "Running stitch" },
+    "correct": "C",
+    "category": "TEXTILES"
+  },
+  {
+    "prompt": "What does 'bias cut' mean?",
+    "choices": { "A": "Cutting along the straight grain", "B": "Cutting diagonally across the grain", "C": "Cutting with the selvage", "D": "Cutting double layers" },
+    "correct": "B",
+    "category": "TEXTILES"
+  },
+  {
+    "prompt": "Which fiber is produced by silkworms?",
+    "choices": { "A": "Wool", "B": "Silk", "C": "Nylon", "D": "Rayon" },
+    "correct": "B",
+    "category": "TEXTILES"
+  },
+  {
+    "prompt": "What is the looped edge produced by crocheting or serging called?",
+    "choices": { "A": "Hem", "B": "Chain", "C": "Overcast edge", "D": "Selvage" },
+    "correct": "C",
+    "category": "TEXTILES"
+  },
+  {
+    "prompt": "Which stitch is commonly used for stretchy knit fabrics on sewing machines?",
+    "choices": { "A": "Straight stitch", "B": "Zigzag stitch", "C": "Overcast stitch", "D": "Chain stitch" },
+    "correct": "B",
+    "category": "TEXTILES"
+  }
+]
+

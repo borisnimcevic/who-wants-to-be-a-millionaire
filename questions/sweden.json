@@ -1,0 +1,183 @@
+[
+  {
+    "prompt": "What is the capital city of Sweden?",
+    "choices": { "A": "Gothenburg", "B": "Malmö", "C": "Stockholm", "D": "Uppsala" },
+    "correct": "C",
+    "category": "SWEDEN"
+  },
+  {
+    "prompt": "Which currency is used in Sweden?",
+    "choices": { "A": "Euro", "B": "Swedish Krona", "C": "Danish Krone", "D": "Pound" },
+    "correct": "B",
+    "category": "SWEDEN"
+  },
+  {
+    "prompt": "What colors are on the Swedish flag?",
+    "choices": { "A": "Blue and Yellow", "B": "Red and White", "C": "Blue and White", "D": "Green and Yellow" },
+    "correct": "A",
+    "category": "SWEDEN"
+  },
+  {
+    "prompt": "Which sea borders much of Sweden’s east coast?",
+    "choices": { "A": "North Sea", "B": "Baltic Sea", "C": "Norwegian Sea", "D": "Barents Sea" },
+    "correct": "B",
+    "category": "SWEDEN"
+  },
+  {
+    "prompt": "What is Sweden’s national day?",
+    "choices": { "A": "June 6", "B": "May 1", "C": "December 13", "D": "January 1" },
+    "correct": "A",
+    "category": "SWEDEN"
+  },
+  {
+    "prompt": "Which Swedish city is famous for its car industry (Volvo)?",
+    "choices": { "A": "Malmö", "B": "Gothenburg", "C": "Uppsala", "D": "Kiruna" },
+    "correct": "B",
+    "category": "SWEDEN"
+  },
+  {
+    "prompt": "What is the name of the Swedish parliament?",
+    "choices": { "A": "Riksdagen", "B": "Storting", "C": "Folketinget", "D": "Althing" },
+    "correct": "A",
+    "category": "SWEDEN"
+  },
+  {
+    "prompt": "Which large furniture retailer originated in Sweden?",
+    "choices": { "A": "IKEA", "B": "H&M", "C": "Clas Ohlson", "D": "JYSK" },
+    "correct": "A",
+    "category": "SWEDEN"
+  },
+  {
+    "prompt": "Which Swedish band became world famous after winning Eurovision 1974?",
+    "choices": { "A": "Ace of Base", "B": "ABBA", "C": "Roxette", "D": "The Cardigans" },
+    "correct": "B",
+    "category": "SWEDEN"
+  },
+  {
+    "prompt": "What is Sweden’s northernmost region called?",
+    "choices": { "A": "Götaland", "B": "Svealand", "C": "Lapland", "D": "Norrland" },
+    "correct": "C",
+    "category": "SWEDEN"
+  },
+  {
+    "prompt": "What is the traditional Swedish smorgasbord?",
+    "choices": { "A": "Seafood soup", "B": "Buffet meal", "C": "Meatball stew", "D": "Fish pie" },
+    "correct": "B",
+    "category": "SWEDEN"
+  },
+  {
+    "prompt": "Which scientist invented the dynamite and established a famous prize?",
+    "choices": { "A": "Carl Linnaeus", "B": "Anders Celsius", "C": "Alfred Nobel", "D": "Nils Bohr" },
+    "correct": "C",
+    "category": "SWEDEN"
+  },
+  {
+    "prompt": "What is Sweden’s second-largest city?",
+    "choices": { "A": "Malmö", "B": "Uppsala", "C": "Gothenburg", "D": "Linköping" },
+    "correct": "C",
+    "category": "SWEDEN"
+  },
+  {
+    "prompt": "Which Swedish holiday celebrates the arrival of summer with maypoles?",
+    "choices": { "A": "Lucia Day", "B": "Midsummer", "C": "Valborg", "D": "All Saints’ Day" },
+    "correct": "B",
+    "category": "SWEDEN"
+  },
+  {
+    "prompt": "What is the highest mountain in Sweden?",
+    "choices": { "A": "Kebnekaise", "B": "Helags", "C": "Åreskutan", "D": "Sarektjåkkå" },
+    "correct": "A",
+    "category": "SWEDEN"
+  },
+  {
+    "prompt": "Which popular video game franchise was created by the Swedish company Mojang?",
+    "choices": { "A": "Minecraft", "B": "Candy Crush", "C": "Battlefield", "D": "Just Cause" },
+    "correct": "A",
+    "category": "SWEDEN"
+  },
+  {
+    "prompt": "What does 'fika' mean in Swedish culture?",
+    "choices": { "A": "Evening party", "B": "Coffee break with pastries", "C": "Sauna time", "D": "Midnight walk" },
+    "correct": "B",
+    "category": "SWEDEN"
+  },
+  {
+    "prompt": "Which car brand was founded in Sweden besides Volvo?",
+    "choices": { "A": "Saab", "B": "Audi", "C": "Skoda", "D": "Opel" },
+    "correct": "A",
+    "category": "SWEDEN"
+  },
+  {
+    "prompt": "Which Swedish city is known for its university, one of the oldest in Scandinavia?",
+    "choices": { "A": "Uppsala", "B": "Lund", "C": "Linköping", "D": "Örebro" },
+    "correct": "A",
+    "category": "SWEDEN"
+  },
+  {
+    "prompt": "What is Sweden’s official national animal?",
+    "choices": { "A": "Reindeer", "B": "Moose", "C": "Wolf", "D": "Bear" },
+    "correct": "B",
+    "category": "SWEDEN"
+  },
+  {
+    "prompt": "Which temperature scale was invented by a Swede?",
+    "choices": { "A": "Kelvin", "B": "Celsius", "C": "Fahrenheit", "D": "Rankine" },
+    "correct": "B",
+    "category": "SWEDEN"
+  },
+  {
+    "prompt": "What is the name of the bridge connecting Sweden and Denmark?",
+    "choices": { "A": "Great Belt Bridge", "B": "Oresund Bridge", "C": "Storebaelt Bridge", "D": "Skagerrak Bridge" },
+    "correct": "B",
+    "category": "SWEDEN"
+  },
+  {
+    "prompt": "Which Swedish pop group had the hit song 'The Sign'?",
+    "choices": { "A": "ABBA", "B": "Ace of Base", "C": "Roxette", "D": "Europe" },
+    "correct": "B",
+    "category": "SWEDEN"
+  },
+  {
+    "prompt": "What is the Swedish word for Sweden?",
+    "choices": { "A": "Sverige", "B": "Svenska", "C": "Stockholm", "D": "Svea" },
+    "correct": "A",
+    "category": "SWEDEN"
+  },
+  {
+    "prompt": "Which company is Sweden’s largest telecom provider?",
+    "choices": { "A": "Nokia", "B": "Ericsson", "C": "Telia Company", "D": "Volvo Telecom" },
+    "correct": "C",
+    "category": "SWEDEN"
+  },
+  {
+    "prompt": "What is the traditional Swedish Christmas drink?",
+    "choices": { "A": "Glögg", "B": "Schnapps", "C": "Julmust", "D": "Mead" },
+    "correct": "A",
+    "category": "SWEDEN"
+  },
+  {
+    "prompt": "Which Swedish climate activist gained worldwide attention starting in 2018?",
+    "choices": { "A": "Greta Thunberg", "B": "Malena Ernman", "C": "Carin Jämtin", "D": "Astrid Lindgren" },
+    "correct": "A",
+    "category": "SWEDEN"
+  },
+  {
+    "prompt": "Which fairy tale author wrote 'Pippi Longstocking'?",
+    "choices": { "A": "Selma Lagerlöf", "B": "Astrid Lindgren", "C": "H.C. Andersen", "D": "Tove Jansson" },
+    "correct": "B",
+    "category": "SWEDEN"
+  },
+  {
+    "prompt": "What is the name of Sweden’s national ice hockey team?",
+    "choices": { "A": "Tre Kronor", "B": "Blågult", "C": "Vikings", "D": "Nordic Blades" },
+    "correct": "A",
+    "category": "SWEDEN"
+  },
+  {
+    "prompt": "Which Swedish city is located north of the Arctic Circle and known for its ice hotel?",
+    "choices": { "A": "Kiruna", "B": "Umeå", "C": "Luleå", "D": "Östersund" },
+    "correct": "A",
+    "category": "SWEDEN"
+  }
+]
+

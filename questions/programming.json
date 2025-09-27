@@ -1,162 +1,183 @@
 [
   {
-    "prompt": "Which programming paradigm is based on objects and classes?",
-    "choices": {
-      "A": "Functional",
-      "B": "Imperative",
-      "C": "Object-Oriented",
-      "D": "Procedural"
-    },
-    "correct": "C",
-    "category": "PROGRAMMING"
-  },
-  {
-    "prompt": "Which language is primarily used for web front-end development?",
-    "choices": { "A": "Python", "B": "JavaScript", "C": "C++", "D": "Java" },
-    "correct": "B",
-    "category": "PROGRAMMING"
-  },
-  {
-    "prompt": "What does 'API' stand for?",
-    "choices": {
-      "A": "Application Programming Interface",
-      "B": "Automated Program Instruction",
-      "C": "Advanced Protocol Integration",
-      "D": "Application Process Interpreter"
-    },
-    "correct": "A",
-    "category": "PROGRAMMING"
-  },
-  {
-    "prompt": "Which sorting algorithm has average time complexity O(n log n)?",
-    "choices": {
-      "A": "Bubble Sort",
-      "B": "Quick Sort",
-      "C": "Insertion Sort",
-      "D": "Selection Sort"
-    },
-    "correct": "B",
-    "category": "PROGRAMMING"
-  },
-  {
-    "prompt": "Which symbol is commonly used for comments in Python?",
-    "choices": { "A": "//", "B": "#", "C": "/* */", "D": "--" },
-    "correct": "B",
-    "category": "PROGRAMMING"
-  },
-  {
-    "prompt": "Which data structure uses FIFO order?",
-    "choices": { "A": "Stack", "B": "Queue", "C": "Tree", "D": "Graph" },
-    "correct": "B",
-    "category": "PROGRAMMING"
-  },
-  {
-    "prompt": "Which keyword is used to define a function in Python?",
-    "choices": { "A": "func", "B": "def", "C": "function", "D": "fn" },
-    "correct": "B",
-    "category": "PROGRAMMING"
-  },
-  {
-    "prompt": "Which type of error occurs at runtime?",
-    "choices": {
-      "A": "Syntax Error",
-      "B": "Logical Error",
-      "C": "Runtime Error",
-      "D": "Compilation Error"
-    },
-    "correct": "C",
-    "category": "PROGRAMMING"
-  },
-  {
-    "prompt": "Which operator is used for string concatenation in Python?",
-    "choices": { "A": "+", "B": "&", "C": ".", "D": "++" },
-    "correct": "A",
-    "category": "PROGRAMMING"
-  },
-  {
-    "prompt": "Which keyword is used to create a class in Python?",
-    "choices": { "A": "object", "B": "new", "C": "class", "D": "struct" },
-    "correct": "C",
-    "category": "PROGRAMMING"
-  },
-  {
-    "prompt": "Which language is known as the 'mother of all languages'?",
-    "choices": { "A": "C", "B": "Python", "C": "Java", "D": "Assembly" },
-    "correct": "A",
-    "category": "PROGRAMMING"
-  },
-  {
-    "prompt": "What does SQL stand for?",
-    "choices": {
-      "A": "Structured Query Language",
-      "B": "Simple Question Logic",
-      "C": "System Query Loop",
-      "D": "Sequential Queue Logic"
-    },
-    "correct": "A",
-    "category": "PROGRAMMING"
-  },
-  {
-    "prompt": "Which data structure uses LIFO order?",
-    "choices": { "A": "Stack", "B": "Queue", "C": "Tree", "D": "Array" },
-    "correct": "A",
-    "category": "PROGRAMMING"
-  },
-  {
-    "prompt": "Which keyword is used for inheritance in Python?",
-    "choices": {
-      "A": "extends",
-      "B": "inherits",
-      "C": "class",
-      "D": "(class Sub(Base))"
-    },
-    "correct": "D",
-    "category": "PROGRAMMING"
-  },
-  {
-    "prompt": "Which language is mainly used for Android app development?",
-    "choices": { "A": "Swift", "B": "Kotlin", "C": "C#", "D": "Ruby" },
-    "correct": "B",
-    "category": "PROGRAMMING"
-  },
-  {
-    "prompt": "Which programming concept is based on 'functions as first-class citizens'?",
-    "choices": {
-      "A": "Object-Oriented",
-      "B": "Functional programming",
-      "C": "Imperative programming",
-      "D": "Procedural programming"
-    },
-    "correct": "B",
-    "category": "PROGRAMMING"
-  },
-  {
-    "prompt": "What is the default data type for numbers with decimals in Python?",
-    "choices": { "A": "int", "B": "float", "C": "double", "D": "decimal" },
-    "correct": "B",
-    "category": "PROGRAMMING"
-  },
-  {
-    "prompt": "Which Python library is used for data analysis?",
-    "choices": { "A": "Flask", "B": "NumPy", "C": "Pandas", "D": "Requests" },
-    "correct": "C",
-    "category": "PROGRAMMING"
-  },
-  {
-    "prompt": "What symbol is used for exponentiation in Python?",
+    "prompt": "Which symbol is used for exponentiation in Python?",
     "choices": { "A": "^", "B": "**", "C": "exp()", "D": "^^" },
     "correct": "B",
     "category": "PROGRAMMING"
   },
   {
-    "prompt": "Which sorting algorithm is stable?",
-    "choices": {
-      "A": "Merge Sort",
-      "B": "Quick Sort",
-      "C": "Heap Sort",
-      "D": "Selection Sort"
-    },
+    "prompt": "Arrays and lists in most programming languages use which index base?",
+    "choices": { "A": "−1-based", "B": "0-based", "C": "1-based", "D": "2-based" },
+    "correct": "B",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "What is the time complexity of binary search on a sorted array?",
+    "choices": { "A": "O(n)", "B": "O(n log n)", "C": "O(log n)", "D": "O(1)" },
+    "correct": "C",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which of these is NOT a primitive data type in many languages?",
+    "choices": { "A": "Integer", "B": "Boolean", "C": "String", "D": "Class" },
+    "correct": "D",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which HTML tag is used to create a hyperlink?",
+    "choices": { "A": "<link>", "B": "<a>", "C": "<href>", "D": "<url>" },
+    "correct": "B",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which HTTP status code means 'Not Found'?",
+    "choices": { "A": "200", "B": "301", "C": "403", "D": "404" },
+    "correct": "D",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "In SQL, which command retrieves data from a table?",
+    "choices": { "A": "GET", "B": "FETCH", "C": "SELECT", "D": "READ" },
+    "correct": "C",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which symbol denotes a single-line comment in JavaScript?",
+    "choices": { "A": "#", "B": "//", "C": "/* */", "D": "<!-- -->" },
+    "correct": "B",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which keyword defines a constant in JavaScript (ES6+)?",
+    "choices": { "A": "var", "B": "let", "C": "const", "D": "static" },
+    "correct": "C",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "What does 'OOP' stand for?",
+    "choices": { "A": "Object-Oriented Programming", "B": "Open Object Protocol", "C": "Operations On Pointers", "D": "Object-Operated Process" },
+    "correct": "A",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which data structure uses FIFO (First In, First Out)?",
+    "choices": { "A": "Stack", "B": "Queue", "C": "Tree", "D": "Hash table" },
+    "correct": "B",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "What does SQL stand for?",
+    "choices": { "A": "Standard Query Language", "B": "Structured Query Language", "C": "Simple Query List", "D": "Serialized Query Language" },
+    "correct": "B",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which operator checks strict equality in JavaScript?",
+    "choices": { "A": "==", "B": "=", "C": "===", "D": "!===" },
+    "correct": "C",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "In Git, which command creates and switches to a new branch (modern syntax)?",
+    "choices": { "A": "git switch -c <name>", "B": "git new <name>", "C": "git branch -s <name>", "D": "git create <name>" },
+    "correct": "A",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which language runs on the JVM and uses 'class' and 'interface' heavily?",
+    "choices": { "A": "Python", "B": "Java", "C": "Go", "D": "Rust" },
+    "correct": "B",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which Python collection is immutable?",
+    "choices": { "A": "List", "B": "Dictionary", "C": "Set", "D": "Tuple" },
+    "correct": "D",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which SQL JOIN returns only matching rows from both tables?",
+    "choices": { "A": "LEFT JOIN", "B": "RIGHT JOIN", "C": "FULL OUTER JOIN", "D": "INNER JOIN" },
+    "correct": "D",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which keyword in many languages prevents a variable from being changed after assignment?",
+    "choices": { "A": "final/const", "B": "static", "C": "volatile", "D": "mutable" },
+    "correct": "A",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "What is the main purpose of a hash function in a hash table?",
+    "choices": { "A": "Sorting keys", "B": "Encrypting data", "C": "Mapping keys to indices", "D": "Compressing values" },
+    "correct": "C",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which CSS property aligns items along the main axis in a flex container?",
+    "choices": { "A": "align-items", "B": "justify-content", "C": "text-align", "D": "place-items" },
+    "correct": "B",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which language is primarily used for querying and manipulating documents in MongoDB?",
+    "choices": { "A": "SQL", "B": "JSON-like query language", "C": "XPath", "D": "Cypher" },
+    "correct": "B",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "What does REST stand for in web services?",
+    "choices": { "A": "Representational State Transfer", "B": "Remote Service Transport", "C": "Reliable Exchange Service Type", "D": "Resource Service Template" },
+    "correct": "A",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which keyword in C is used to allocate memory dynamically?",
+    "choices": { "A": "alloc", "B": "malloc", "C": "new", "D": "reserve" },
+    "correct": "B",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which paradigm focuses on functions without side effects and immutable data?",
+    "choices": { "A": "Procedural", "B": "Functional", "C": "Object-Oriented", "D": "Imperative" },
+    "correct": "B",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which of these is a compiled systems programming language known for safety and speed?",
+    "choices": { "A": "Ruby", "B": "PHP", "C": "Rust", "D": "Perl" },
+    "correct": "C",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "In networking, which protocol is used to securely transfer web pages?",
+    "choices": { "A": "HTTP", "B": "FTP", "C": "HTTPS", "D": "SMTP" },
+    "correct": "C",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which HTML5 element represents a self-contained composition like a blog post?",
+    "choices": { "A": "<section>", "B": "<article>", "C": "<aside>", "D": "<main>" },
+    "correct": "B",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which sorting algorithm has average time complexity O(n log n) and is comparison-based?",
+    "choices": { "A": "Bubble sort", "B": "Quick sort", "C": "Counting sort", "D": "Radix sort" },
+    "correct": "B",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "In Python, what is a virtual environment primarily used for?",
+    "choices": { "A": "Running code faster", "B": "Isolating project dependencies", "C": "Debugging memory leaks", "D": "Creating GUIs" },
+    "correct": "B",
+    "category": "PROGRAMMING"
+  },
+  {
+    "prompt": "Which Git command stages all modified and new files in the current directory?",
+    "choices": { "A": "git add .", "B": "git stage -A", "C": "git commit -a", "D": "git include *" },
     "correct": "A",
     "category": "PROGRAMMING"
   }
 ]
+

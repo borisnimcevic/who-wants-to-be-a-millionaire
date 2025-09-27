@@ -1,23 +1,14 @@
+
 [
   {
     "prompt": "Which component converts AC to DC?",
-    "choices": {
-      "A": "Resistor",
-      "B": "Rectifier",
-      "C": "Capacitor",
-      "D": "Transformer"
-    },
+    "choices": { "A": "Resistor", "B": "Rectifier", "C": "Capacitor", "D": "Transformer" },
     "correct": "B",
     "category": "ELECTRONICS"
   },
   {
     "prompt": "What does LED stand for?",
-    "choices": {
-      "A": "Light Emitting Diode",
-      "B": "Low Energy Device",
-      "C": "Linear Electric Driver",
-      "D": "Long Emission Display"
-    },
+    "choices": { "A": "Light Emitting Diode", "B": "Low Energy Device", "C": "Linear Electric Driver", "D": "Long Emission Display" },
     "correct": "A",
     "category": "ELECTRONICS"
   },
@@ -29,12 +20,7 @@
   },
   {
     "prompt": "Which law explains electromagnetic induction?",
-    "choices": {
-      "A": "Ohm's Law",
-      "B": "Faraday's Law",
-      "C": "Coulomb's Law",
-      "D": "Newton's Law"
-    },
+    "choices": { "A": "Ohm's Law", "B": "Faraday's Law", "C": "Coulomb's Law", "D": "Newton's Law" },
     "correct": "B",
     "category": "ELECTRONICS"
   },
@@ -46,12 +32,7 @@
   },
   {
     "prompt": "What does a transistor primarily do?",
-    "choices": {
-      "A": "Amplify or switch signals",
-      "B": "Store data",
-      "C": "Generate electricity",
-      "D": "Measure resistance"
-    },
+    "choices": { "A": "Amplify or switch signals", "B": "Store data", "C": "Generate electricity", "D": "Measure resistance" },
     "correct": "A",
     "category": "ELECTRONICS"
   },
@@ -69,12 +50,7 @@
   },
   {
     "prompt": "What is the main function of a fuse?",
-    "choices": {
-      "A": "Store energy",
-      "B": "Amplify current",
-      "C": "Protect circuits from overcurrent",
-      "D": "Switch signals"
-    },
+    "choices": { "A": "Store energy", "B": "Amplify current", "C": "Protect circuits from overcurrent", "D": "Switch signals" },
     "correct": "C",
     "category": "ELECTRONICS"
   },
@@ -86,12 +62,7 @@
   },
   {
     "prompt": "What does CPU stand for?",
-    "choices": {
-      "A": "Central Processing Unit",
-      "B": "Computer Power Unit",
-      "C": "Central Peripheral Unit",
-      "D": "Circuit Processing Unit"
-    },
+    "choices": { "A": "Central Processing Unit", "B": "Computer Power Unit", "C": "Central Peripheral Unit", "D": "Circuit Processing Unit" },
     "correct": "A",
     "category": "ELECTRONICS"
   },
@@ -115,34 +86,19 @@
   },
   {
     "prompt": "Which device amplifies weak signals?",
-    "choices": {
-      "A": "Resistor",
-      "B": "Transistor",
-      "C": "Capacitor",
-      "D": "Transformer"
-    },
+    "choices": { "A": "Resistor", "B": "Transistor", "C": "Capacitor", "D": "Transformer" },
     "correct": "B",
     "category": "ELECTRONICS"
   },
   {
     "prompt": "What does AC stand for in electricity?",
-    "choices": {
-      "A": "Active Current",
-      "B": "Alternate Current",
-      "C": "Alternating Current",
-      "D": "Absolute Current"
-    },
+    "choices": { "A": "Active Current", "B": "Alternate Current", "C": "Alternating Current", "D": "Absolute Current" },
     "correct": "C",
     "category": "ELECTRONICS"
   },
   {
     "prompt": "Which frequency band does Wi-Fi commonly use?",
-    "choices": {
-      "A": "900 MHz",
-      "B": "2.4 GHz and 5 GHz",
-      "C": "50 Hz",
-      "D": "100 MHz"
-    },
+    "choices": { "A": "900 MHz", "B": "2.4 GHz and 5 GHz", "C": "50 Hz", "D": "100 MHz" },
     "correct": "B",
     "category": "ELECTRONICS"
   },
@@ -162,6 +118,66 @@
     "prompt": "Which device converts digital signals into analog?",
     "choices": { "A": "ADC", "B": "DAC", "C": "CPU", "D": "ROM" },
     "correct": "B",
+    "category": "ELECTRONICS"
+  },
+  {
+    "prompt": "What does PCB stand for?",
+    "choices": { "A": "Power Circuit Board", "B": "Printed Circuit Board", "C": "Primary Control Board", "D": "Parallel Current Bus" },
+    "correct": "B",
+    "category": "ELECTRONICS"
+  },
+  {
+    "prompt": "Which component stores energy in a magnetic field?",
+    "choices": { "A": "Capacitor", "B": "Inductor", "C": "Resistor", "D": "Diode" },
+    "correct": "B",
+    "category": "ELECTRONICS"
+  },
+  {
+    "prompt": "Which quantity is measured in volts?",
+    "choices": { "A": "Current", "B": "Voltage", "C": "Resistance", "D": "Power" },
+    "correct": "B",
+    "category": "ELECTRONICS"
+  },
+  {
+    "prompt": "What does IC stand for in electronics?",
+    "choices": { "A": "Internal Conductor", "B": "Integrated Circuit", "C": "Input Control", "D": "Interface Chip" },
+    "correct": "B",
+    "category": "ELECTRONICS"
+  },
+  {
+    "prompt": "Which component is polarized and must be connected the right way?",
+    "choices": { "A": "Resistor", "B": "Capacitor", "C": "Diode", "D": "Both B and C" },
+    "correct": "D",
+    "category": "ELECTRONICS"
+  },
+  {
+    "prompt": "What type of signal varies continuously over time?",
+    "choices": { "A": "Analog", "B": "Digital", "C": "Pulse", "D": "Square" },
+    "correct": "A",
+    "category": "ELECTRONICS"
+  },
+  {
+    "prompt": "Which unit is used to measure frequency?",
+    "choices": { "A": "Hertz", "B": "Joule", "C": "Tesla", "D": "Watt" },
+    "correct": "A",
+    "category": "ELECTRONICS"
+  },
+  {
+    "prompt": "Which component regulates voltage in a circuit?",
+    "choices": { "A": "Capacitor", "B": "Transformer", "C": "Voltage Regulator", "D": "Inductor" },
+    "correct": "C",
+    "category": "ELECTRONICS"
+  },
+  {
+    "prompt": "What does SMPS stand for?",
+    "choices": { "A": "Switch Mode Power Supply", "B": "Signal Modulation Processing System", "C": "Single Mode Power Source", "D": "Serial Motor Power Switch" },
+    "correct": "A",
+    "category": "ELECTRONICS"
+  },
+  {
+    "prompt": "What does EEPROM stand for?",
+    "choices": { "A": "Erasable Electrically Programmable Read-Only Memory", "B": "Enhanced Electronic Programmable ROM", "C": "External Electrical Program ROM", "D": "Embedded Electrically Protected Memory" },
+    "correct": "A",
     "category": "ELECTRONICS"
   }
 ]

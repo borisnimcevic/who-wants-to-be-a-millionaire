@@ -1,0 +1,183 @@
+[
+  {
+    "prompt": "How long is one lap on a standard outdoor track?",
+    "choices": { "A": "200 meters", "B": "300 meters", "C": "400 meters", "D": "800 meters" },
+    "correct": "C",
+    "category": "ATHLETICS"
+  },
+  {
+    "prompt": "What is the shortest sprint distance in Olympic track events?",
+    "choices": { "A": "60m", "B": "100m", "C": "200m", "D": "400m" },
+    "correct": "B",
+    "category": "ATHLETICS"
+  },
+  {
+    "prompt": "How many hurdles are in the men's 110m hurdles race?",
+    "choices": { "A": "8", "B": "10", "C": "12", "D": "14" },
+    "correct": "B",
+    "category": "ATHLETICS"
+  },
+  {
+    "prompt": "What is the world record for the men's 100m sprint (as of 2025)?",
+    "choices": { "A": "9.58s", "B": "9.63s", "C": "9.69s", "D": "9.72s" },
+    "correct": "A",
+    "category": "ATHLETICS"
+  },
+  {
+    "prompt": "Who holds the women's 100m world record?",
+    "choices": { "A": "Florence Griffith-Joyner", "B": "Elaine Thompson-Herah", "C": "Shelly-Ann Fraser-Pryce", "D": "Carmelita Jeter" },
+    "correct": "A",
+    "category": "ATHLETICS"
+  },
+  {
+    "prompt": "In the long jump, what is the length of the take-off board from the landing pit?",
+    "choices": { "A": "1m", "B": "2m", "C": "3m", "D": "1.22m" },
+    "correct": "C",
+    "category": "ATHLETICS"
+  },
+  {
+    "prompt": "What is the official weight of the men's shot put?",
+    "choices": { "A": "6 kg", "B": "7.26 kg", "C": "8 kg", "D": "5 kg" },
+    "correct": "B",
+    "category": "ATHLETICS"
+  },
+  {
+    "prompt": "What is the official distance of a marathon?",
+    "choices": { "A": "40 km", "B": "41.1 km", "C": "42.195 km", "D": "43 km" },
+    "correct": "C",
+    "category": "ATHLETICS"
+  },
+  {
+    "prompt": "Which event combines 10 track and field disciplines for men?",
+    "choices": { "A": "Heptathlon", "B": "Pentathlon", "C": "Decathlon", "D": "Triathlon" },
+    "correct": "C",
+    "category": "ATHLETICS"
+  },
+  {
+    "prompt": "What is the baton used in?",
+    "choices": { "A": "Hurdles", "B": "Relays", "C": "Pole vault", "D": "Javelin" },
+    "correct": "B",
+    "category": "ATHLETICS"
+  },
+  {
+    "prompt": "How many runners compete per team in a 4x100m relay?",
+    "choices": { "A": "3", "B": "4", "C": "5", "D": "6" },
+    "correct": "B",
+    "category": "ATHLETICS"
+  },
+  {
+    "prompt": "In the triple jump, what is the correct sequence of foot contacts?",
+    "choices": { "A": "Hop, hop, jump", "B": "Hop, step, jump", "C": "Step, hop, jump", "D": "Jump, step, hop" },
+    "correct": "B",
+    "category": "ATHLETICS"
+  },
+  {
+    "prompt": "How high is the men's 110m hurdle barrier?",
+    "choices": { "A": "1.067m", "B": "1.00m", "C": "1.20m", "D": "0.91m" },
+    "correct": "A",
+    "category": "ATHLETICS"
+  },
+  {
+    "prompt": "Which race is often called the 'metric mile'?",
+    "choices": { "A": "800m", "B": "1500m", "C": "1600m", "D": "3000m" },
+    "correct": "B",
+    "category": "ATHLETICS"
+  },
+  {
+    "prompt": "How many events are in the women's heptathlon?",
+    "choices": { "A": "5", "B": "6", "C": "7", "D": "8" },
+    "correct": "C",
+    "category": "ATHLETICS"
+  },
+  {
+    "prompt": "Which field event uses a cage for safety?",
+    "choices": { "A": "Javelin", "B": "Shot put", "C": "Hammer throw", "D": "Pole vault" },
+    "correct": "C",
+    "category": "ATHLETICS"
+  },
+  {
+    "prompt": "What is the legal wind assistance limit for record-valid sprints?",
+    "choices": { "A": "+2.0 m/s", "B": "+1.5 m/s", "C": "+2.5 m/s", "D": "+3.0 m/s" },
+    "correct": "A",
+    "category": "ATHLETICS"
+  },
+  {
+    "prompt": "Which distance race includes barriers and water jumps?",
+    "choices": { "A": "Steeplechase", "B": "Marathon", "C": "Cross country", "D": "10,000m" },
+    "correct": "A",
+    "category": "ATHLETICS"
+  },
+  {
+    "prompt": "What surface are modern outdoor tracks usually made from?",
+    "choices": { "A": "Grass", "B": "Clay", "C": "Synthetic rubber", "D": "Concrete" },
+    "correct": "C",
+    "category": "ATHLETICS"
+  },
+  {
+    "prompt": "What is the exchange zone length in a relay race?",
+    "choices": { "A": "10m", "B": "20m", "C": "30m", "D": "15m" },
+    "correct": "B",
+    "category": "ATHLETICS"
+  },
+  {
+    "prompt": "Which athlete is famous for winning 4 gold medals at the 1936 Berlin Olympics?",
+    "choices": { "A": "Carl Lewis", "B": "Jesse Owens", "C": "Usain Bolt", "D": "Jim Thorpe" },
+    "correct": "B",
+    "category": "ATHLETICS"
+  },
+  {
+    "prompt": "What is the official length of an indoor track lap?",
+    "choices": { "A": "200m", "B": "250m", "C": "300m", "D": "400m" },
+    "correct": "A",
+    "category": "ATHLETICS"
+  },
+  {
+    "prompt": "Which event uses a fiberglass pole?",
+    "choices": { "A": "Pole vault", "B": "High jump", "C": "Triple jump", "D": "Javelin throw" },
+    "correct": "A",
+    "category": "ATHLETICS"
+  },
+  {
+    "prompt": "What is the foul line called in long jump and triple jump?",
+    "choices": { "A": "Scratch line", "B": "Take-off board", "C": "Jump edge", "D": "Landing mark" },
+    "correct": "B",
+    "category": "ATHLETICS"
+  },
+  {
+    "prompt": "Which event is traditionally the last in the men's decathlon?",
+    "choices": { "A": "1500m", "B": "Pole vault", "C": "Discus throw", "D": "Javelin throw" },
+    "correct": "A",
+    "category": "ATHLETICS"
+  },
+  {
+    "prompt": "How many lanes are on a standard outdoor track?",
+    "choices": { "A": "6", "B": "8", "C": "9", "D": "10" },
+    "correct": "B",
+    "category": "ATHLETICS"
+  },
+  {
+    "prompt": "What is the distance of a half marathon?",
+    "choices": { "A": "20.1 km", "B": "21.0975 km", "C": "22.5 km", "D": "23 km" },
+    "correct": "B",
+    "category": "ATHLETICS"
+  },
+  {
+    "prompt": "Which throw uses a spear-like implement?",
+    "choices": { "A": "Javelin", "B": "Discus", "C": "Hammer", "D": "Shot put" },
+    "correct": "A",
+    "category": "ATHLETICS"
+  },
+  {
+    "prompt": "In which event do athletes spin before release?",
+    "choices": { "A": "Javelin", "B": "Discus", "C": "Long jump", "D": "High jump" },
+    "correct": "B",
+    "category": "ATHLETICS"
+  },
+  {
+    "prompt": "Which race is considered the classic long-distance track event?",
+    "choices": { "A": "5000m", "B": "10000m", "C": "1500m", "D": "800m" },
+    "correct": "B",
+    "category": "ATHLETICS"
+  }
+]
+

@@ -1,0 +1,183 @@
+[
+  {
+    "prompt": "In which year were the first modern Olympic Games held?",
+    "choices": { "A": "1896", "B": "1900", "C": "1924", "D": "1888" },
+    "correct": "A",
+    "category": "OLYMPICS"
+  },
+  {
+    "prompt": "Which city hosted the first modern Olympic Games?",
+    "choices": { "A": "London", "B": "Athens", "C": "Paris", "D": "Rome" },
+    "correct": "B",
+    "category": "OLYMPICS"
+  },
+  {
+    "prompt": "How often are the Summer Olympic Games held?",
+    "choices": { "A": "Every 2 years", "B": "Every 3 years", "C": "Every 4 years", "D": "Every 5 years" },
+    "correct": "C",
+    "category": "OLYMPICS"
+  },
+  {
+    "prompt": "Which symbol represents the Olympic Games?",
+    "choices": { "A": "Five interlocking rings", "B": "A flaming torch", "C": "A laurel wreath", "D": "A running athlete" },
+    "correct": "A",
+    "category": "OLYMPICS"
+  },
+  {
+    "prompt": "What do the five Olympic rings represent?",
+    "choices": { "A": "Five types of sports", "B": "Five continents", "C": "Five medals", "D": "Five ancient cities" },
+    "correct": "B",
+    "category": "OLYMPICS"
+  },
+  {
+    "prompt": "Which city was the first to host the Olympics three times?",
+    "choices": { "A": "Paris", "B": "Athens", "C": "London", "D": "Los Angeles" },
+    "correct": "C",
+    "category": "OLYMPICS"
+  },
+  {
+    "prompt": "Who is the most decorated Olympian of all time?",
+    "choices": { "A": "Usain Bolt", "B": "Michael Phelps", "C": "Larisa Latynina", "D": "Mark Spitz" },
+    "correct": "B",
+    "category": "OLYMPICS"
+  },
+  {
+    "prompt": "What color is the center Olympic ring?",
+    "choices": { "A": "Black", "B": "Red", "C": "Blue", "D": "Green" },
+    "correct": "A",
+    "category": "OLYMPICS"
+  },
+  {
+    "prompt": "Which sport returned to the Olympics in 2016 after more than 100 years?",
+    "choices": { "A": "Golf", "B": "Rugby Sevens", "C": "Baseball", "D": "Tennis" },
+    "correct": "A",
+    "category": "OLYMPICS"
+  },
+  {
+    "prompt": "Where were the 2020 Summer Olympics held?",
+    "choices": { "A": "Tokyo", "B": "Rio de Janeiro", "C": "Beijing", "D": "Paris" },
+    "correct": "A",
+    "category": "OLYMPICS"
+  },
+  {
+    "prompt": "Which city will host the 2028 Summer Olympics?",
+    "choices": { "A": "Los Angeles", "B": "Brisbane", "C": "Paris", "D": "Tokyo" },
+    "correct": "A",
+    "category": "OLYMPICS"
+  },
+  {
+    "prompt": "What is the maximum number of rings on the Olympic flag?",
+    "choices": { "A": "4", "B": "5", "C": "6", "D": "7" },
+    "correct": "B",
+    "category": "OLYMPICS"
+  },
+  {
+    "prompt": "In which sport did Usain Bolt win his Olympic gold medals?",
+    "choices": { "A": "Swimming", "B": "Cycling", "C": "Track and Field", "D": "Rowing" },
+    "correct": "C",
+    "category": "OLYMPICS"
+  },
+  {
+    "prompt": "Which country has won the most Olympic medals overall?",
+    "choices": { "A": "China", "B": "Germany", "C": "Russia", "D": "United States" },
+    "correct": "D",
+    "category": "OLYMPICS"
+  },
+  {
+    "prompt": "When were the Winter Olympics first held?",
+    "choices": { "A": "1896", "B": "1924", "C": "1936", "D": "1952" },
+    "correct": "B",
+    "category": "OLYMPICS"
+  },
+  {
+    "prompt": "Which city hosted both Summer and Winter Olympics?",
+    "choices": { "A": "Beijing", "B": "Tokyo", "C": "Paris", "D": "London" },
+    "correct": "A",
+    "category": "OLYMPICS"
+  },
+  {
+    "prompt": "Which animal is often part of the Olympic Games mascots?",
+    "choices": { "A": "Cat", "B": "Bear", "C": "Dragon", "D": "Horse" },
+    "correct": "B",
+    "category": "OLYMPICS"
+  },
+  {
+    "prompt": "What is the motto of the Olympic Games?",
+    "choices": { "A": "Faster, Higher, Stronger", "B": "One World, One Dream", "C": "Friendship Through Sport", "D": "Sport for All" },
+    "correct": "A",
+    "category": "OLYMPICS"
+  },
+  {
+    "prompt": "Which city will host the 2024 Summer Olympics?",
+    "choices": { "A": "Paris", "B": "Los Angeles", "C": "Brisbane", "D": "Rome" },
+    "correct": "A",
+    "category": "OLYMPICS"
+  },
+  {
+    "prompt": "Who lights the Olympic cauldron at the Opening Ceremony?",
+    "choices": { "A": "Host nation president", "B": "Famous athlete(s)", "C": "IOC president", "D": "Random fan" },
+    "correct": "B",
+    "category": "OLYMPICS"
+  },
+  {
+    "prompt": "Which ancient city inspired the name 'Olympics'?",
+    "choices": { "A": "Athens", "B": "Sparta", "C": "Olympia", "D": "Rome" },
+    "correct": "C",
+    "category": "OLYMPICS"
+  },
+  {
+    "prompt": "How many sports were included in the Tokyo 2020 Olympics?",
+    "choices": { "A": "28", "B": "33", "C": "25", "D": "30" },
+    "correct": "B",
+    "category": "OLYMPICS"
+  },
+  {
+    "prompt": "Which country hosted the first Winter Olympics?",
+    "choices": { "A": "Switzerland", "B": "France", "C": "Norway", "D": "Canada" },
+    "correct": "B",
+    "category": "OLYMPICS"
+  },
+  {
+    "prompt": "What color is the Olympic flame?",
+    "choices": { "A": "Yellow", "B": "Orange", "C": "Red", "D": "Gold" },
+    "correct": "B",
+    "category": "OLYMPICS"
+  },
+  {
+    "prompt": "Which team marches first in the Olympic Opening Ceremony?",
+    "choices": { "A": "Host nation", "B": "Greece", "C": "Most recent winner", "D": "Alphabetical order" },
+    "correct": "B",
+    "category": "OLYMPICS"
+  },
+  {
+    "prompt": "What is awarded to Olympic champions?",
+    "choices": { "A": "Gold medal", "B": "Diamond trophy", "C": "Golden laurel", "D": "Platinum star" },
+    "correct": "A",
+    "category": "OLYMPICS"
+  },
+  {
+    "prompt": "Which event marks the end of the Olympic Games?",
+    "choices": { "A": "Closing Ceremony", "B": "Medal Parade", "C": "Fireworks Display", "D": "Final Marathon" },
+    "correct": "A",
+    "category": "OLYMPICS"
+  },
+  {
+    "prompt": "Which city will host the 2032 Summer Olympics?",
+    "choices": { "A": "Brisbane", "B": "Doha", "C": "Madrid", "D": "Berlin" },
+    "correct": "A",
+    "category": "OLYMPICS"
+  },
+  {
+    "prompt": "Who oversees the Olympic Games?",
+    "choices": { "A": "FIFA", "B": "IOC", "C": "UNESCO", "D": "WADA" },
+    "correct": "B",
+    "category": "OLYMPICS"
+  },
+  {
+    "prompt": "Which host city introduced the first official Olympic mascot?",
+    "choices": { "A": "Munich 1972", "B": "Montreal 1976", "C": "Los Angeles 1984", "D": "Seoul 1988" },
+    "correct": "A",
+    "category": "OLYMPICS"
+  }
+]
+

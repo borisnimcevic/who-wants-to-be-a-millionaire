@@ -1,0 +1,183 @@
+
+[
+  {
+    "prompt": "What is the capital city of Serbia?",
+    "choices": { "A": "Novi Sad", "B": "Belgrade", "C": "Niš", "D": "Kragujevac" },
+    "correct": "B",
+    "category": "SERBIA"
+  },
+  {
+    "prompt": "Which river flows through Belgrade?",
+    "choices": { "A": "Sava", "B": "Danube", "C": "Morava", "D": "Tisza" },
+    "correct": "A",
+    "category": "SERBIA"
+  },
+  {
+    "prompt": "What is the official language of Serbia?",
+    "choices": { "A": "Croatian", "B": "Macedonian", "C": "Serbian", "D": "Bosnian" },
+    "correct": "C",
+    "category": "SERBIA"
+  },
+  {
+    "prompt": "Which alphabet is officially used in Serbia?",
+    "choices": { "A": "Latin", "B": "Greek", "C": "Cyrillic", "D": "Arabic" },
+    "correct": "C",
+    "category": "SERBIA"
+  },
+  {
+    "prompt": "What is the currency of Serbia?",
+    "choices": { "A": "Euro", "B": "Serbian Dinar", "C": "Kuna", "D": "Lev" },
+    "correct": "B",
+    "category": "SERBIA"
+  },
+  {
+    "prompt": "Which country borders Serbia to the south?",
+    "choices": { "A": "Hungary", "B": "Croatia", "C": "North Macedonia", "D": "Romania" },
+    "correct": "C",
+    "category": "SERBIA"
+  },
+  {
+    "prompt": "What is the largest city in Serbia after Belgrade?",
+    "choices": { "A": "Novi Sad", "B": "Niš", "C": "Subotica", "D": "Kragujevac" },
+    "correct": "A",
+    "category": "SERBIA"
+  },
+  {
+    "prompt": "Which famous inventor was born in Smiljan, then part of the Austrian Empire, now Croatia, but of Serbian heritage?",
+    "choices": { "A": "Mihajlo Pupin", "B": "Nikola Tesla", "C": "Mileva Marić", "D": "Ivo Andrić" },
+    "correct": "B",
+    "category": "SERBIA"
+  },
+  {
+    "prompt": "What mountain is the highest in Serbia?",
+    "choices": { "A": "Tara", "B": "Stara Planina", "C": "Kopaonik", "D": "Midžor" },
+    "correct": "D",
+    "category": "SERBIA"
+  },
+  {
+    "prompt": "Which sea borders Serbia?",
+    "choices": { "A": "Adriatic Sea", "B": "Black Sea", "C": "None", "D": "Mediterranean Sea" },
+    "correct": "C",
+    "category": "SERBIA"
+  },
+  {
+    "prompt": "What is the name of Serbia’s national airline?",
+    "choices": { "A": "Air Serbia", "B": "JAT Airways", "C": "Serbia Fly", "D": "Belgrade Air" },
+    "correct": "A",
+    "category": "SERBIA"
+  },
+  {
+    "prompt": "Which city hosts the EXIT music festival?",
+    "choices": { "A": "Belgrade", "B": "Niš", "C": "Novi Sad", "D": "Subotica" },
+    "correct": "C",
+    "category": "SERBIA"
+  },
+  {
+    "prompt": "Who was the first Serbian tennis player ranked world No. 1?",
+    "choices": { "A": "Monica Seles", "B": "Novak Djokovic", "C": "Jelena Janković", "D": "Ana Ivanović" },
+    "correct": "B",
+    "category": "SERBIA"
+  },
+  {
+    "prompt": "What is the name of the Serbian Orthodox Church’s main cathedral in Belgrade?",
+    "choices": { "A": "Saint Sava Temple", "B": "Saint Mark’s Church", "C": "Saint Michael’s Cathedral", "D": "Saint George’s Church" },
+    "correct": "A",
+    "category": "SERBIA"
+  },
+  {
+    "prompt": "Which river joins the Danube in Belgrade?",
+    "choices": { "A": "Morava", "B": "Sava", "C": "Drina", "D": "Tisza" },
+    "correct": "B",
+    "category": "SERBIA"
+  },
+  {
+    "prompt": "What is the name of Serbia’s parliament building?",
+    "choices": { "A": "Skupština Srbije", "B": "Dom Naroda", "C": "Palata Republike", "D": "Narodni Dom" },
+    "correct": "A",
+    "category": "SERBIA"
+  },
+  {
+    "prompt": "Which region is known for wine production in Serbia?",
+    "choices": { "A": "Šumadija", "B": "Banat", "C": "Vojvodina", "D": "Sandžak" },
+    "correct": "A",
+    "category": "SERBIA"
+  },
+  {
+    "prompt": "What is Serbia’s traditional national dish made of ground meat?",
+    "choices": { "A": "Ćevapi", "B": "Pljeskavica", "C": "Sarma", "D": "Burek" },
+    "correct": "B",
+    "category": "SERBIA"
+  },
+  {
+    "prompt": "Which ancient Roman emperor was born in present-day Serbia?",
+    "choices": { "A": "Constantine the Great", "B": "Julius Caesar", "C": "Marcus Aurelius", "D": "Nero" },
+    "correct": "A",
+    "category": "SERBIA"
+  },
+  {
+    "prompt": "Which Serbian city is famous for its fortress overlooking the confluence of two rivers?",
+    "choices": { "A": "Niš", "B": "Novi Sad", "C": "Belgrade", "D": "Kragujevac" },
+    "correct": "C",
+    "category": "SERBIA"
+  },
+  {
+    "prompt": "What colors are on the Serbian flag?",
+    "choices": { "A": "Red, Blue, White", "B": "Blue, White, Red", "C": "Red, White, Blue", "D": "White, Blue, Red" },
+    "correct": "A",
+    "category": "SERBIA"
+  },
+  {
+    "prompt": "What is the main religion in Serbia?",
+    "choices": { "A": "Catholicism", "B": "Islam", "C": "Eastern Orthodox Christianity", "D": "Protestantism" },
+    "correct": "C",
+    "category": "SERBIA"
+  },
+  {
+    "prompt": "Which sport is Serbia especially famous for internationally?",
+    "choices": { "A": "Basketball", "B": "Ice hockey", "C": "Cricket", "D": "Rugby" },
+    "correct": "A",
+    "category": "SERBIA"
+  },
+  {
+    "prompt": "What is the name of Serbia’s main national park in the Tara Mountains?",
+    "choices": { "A": "Kopaonik", "B": "Tara National Park", "C": "Đerdap National Park", "D": "Fruška Gora" },
+    "correct": "B",
+    "category": "SERBIA"
+  },
+  {
+    "prompt": "Which city was the capital of medieval Serbia?",
+    "choices": { "A": "Kragujevac", "B": "Novi Sad", "C": "Niš", "D": "Ras" },
+    "correct": "D",
+    "category": "SERBIA"
+  },
+  {
+    "prompt": "What is the Serbian word for hello?",
+    "choices": { "A": "Ćao", "B": "Zdravo", "C": "Pozdrav", "D": "Hvala" },
+    "correct": "B",
+    "category": "SERBIA"
+  },
+  {
+    "prompt": "Who wrote the novel 'The Bridge on the Drina'?",
+    "choices": { "A": "Miloš Crnjanski", "B": "Ivo Andrić", "C": "Mesa Selimovic", "D": "Danilo Kiš" },
+    "correct": "B",
+    "category": "SERBIA"
+  },
+  {
+    "prompt": "Which landmark is considered the heart of Belgrade?",
+    "choices": { "A": "Knez Mihailova Street", "B": "Kalemegdan Fortress", "C": "Republic Square", "D": "Ada Ciganlija" },
+    "correct": "C",
+    "category": "SERBIA"
+  },
+  {
+    "prompt": "Which Serbian scientist is known for long-distance telecommunications and work in the U.S.?",
+    "choices": { "A": "Mihajlo Pupin", "B": "Nikola Tesla", "C": "Milutin Milanković", "D": "Đorđe Stanojević" },
+    "correct": "A",
+    "category": "SERBIA"
+  },
+  {
+    "prompt": "Which traditional Serbian drink is made from plums?",
+    "choices": { "A": "Rakija", "B": "Slivovitz", "C": "Komovica", "D": "Loza" },
+    "correct": "B",
+    "category": "SERBIA"
+  }
+]
