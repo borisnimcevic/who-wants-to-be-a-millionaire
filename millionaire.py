@@ -63,13 +63,14 @@ class Question:
         normalized = {k.upper(): v for k, v in choices.items()}
         if not normalized and isinstance(d.get("choices"), list):
             letters = list("ABCD")
-            normalized = {letters[i]: v for i, v in enumerate(d["choices"]) if i < 4}
+            normalized = {letters[i]: v for i,
+                          v in enumerate(d["choices"]) if i < 4}
         correct = d.get("correct", "").upper()
         if correct not in normalized:
             raise ValueError("Invalid or missing 'correct' matching choices")
         if len(normalized) != 4 or set(normalized.keys()) != set("ABCD"):
             raise ValueError("'choices' must provide A, B, C, D")
-        print(d)
+        # print(d)
         return Question(
             prompt=d["prompt"],
             choices=normalized,
@@ -149,7 +150,8 @@ class Game:
             print(c("No Take a Shot uses left.", Style.DIM))
             return
         correct = self.questions[self.current_index].correct
-        candidates = [k for k in "ABCD" if k != correct and k not in self.eliminated]
+        candidates = [k for k in "ABCD" if k !=
+                      correct and k not in self.eliminated]
         if not candidates:
             print(c("No wrong answers left to remove.", Style.DIM))
             return
@@ -221,11 +223,13 @@ class Game:
             c("\nWho Wants To Be A (Terminal) Millionaire", Style.BOLD, Style.MAGENTA)
         )
         print("Question", self.current_index + 1, "/", len(self.ladder))
-        print("Prize:", c(f"Schmeckles {self.current_prize():,}", Style.YELLOW))
+        print("Prize:", c(f"Schmeckles {
+              self.current_prize():,}", Style.YELLOW))
         if self.lifelines.any_left():
             ll = []
             if self.lifelines.take_shot_uses > 0:
-                ll.append(f"[T] Take a Shot (x{self.lifelines.take_shot_uses})")
+                ll.append(
+                    f"[T] Take a Shot (x{self.lifelines.take_shot_uses})")
             if self.lifelines.audience:
                 ll.append("[U] Audience")
             if self.lifelines.swap:
@@ -250,7 +254,8 @@ class Game:
             except (EOFError, OSError):
                 print(c("Input error or stream closed. Exiting game.", Style.RED))
                 raise SystemExit(1)
-            valid = set(["A", "B", "C", "D", "W", "T", "U", "S"]) - self.eliminated
+            valid = set(["A", "B", "C", "D", "W", "T", "U", "S"]
+                        ) - self.eliminated
             if ans in valid:
                 return ans
             print(c("Invalid input. Try again.", Style.RED))
@@ -408,7 +413,8 @@ def main(argv: List[str]) -> int:
     if len(questions) < len(DEFAULT_LADDER):
         print(
             c(
-                f"Need at least {len(DEFAULT_LADDER)} questions (got {len(questions)}).",
+                f"Need at least {len(DEFAULT_LADDER)} questions (got {
+                    len(questions)}).",
                 Style.RED,
             )
         )
@@ -428,7 +434,8 @@ def main(argv: List[str]) -> int:
     if len(questions) < total_needed:
         print(
             c(
-                f"Need at least {total_needed} questions (got {len(questions)}).",
+                f"Need at least {total_needed} questions (got {
+                    len(questions)}).",
                 Style.RED,
             )
         )
